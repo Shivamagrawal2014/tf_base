@@ -1,15 +1,15 @@
-from file.open_file import OpenFile
 from typing import List, Tuple
+from file.open_file import OpenFile
 from file import IMAGE_TYPE_EXTENSION
 from file.image.parse_image import ParseImage
 
 
 class OpenImage(OpenFile):
 
-    def __init__(self, folder: str, extensions: List[str], size: Tuple[int, int, int] = None):
+    def __init__(self, folder: str, extensions: List[str], size: Tuple[int, int, int] = None, show=False):
         assert all((ext in IMAGE_TYPE_EXTENSION for ext in extensions))
         super(OpenImage, self).__init__(folder, extensions)
-        self.__parse_image = ParseImage(size)
+        self.__parse_image = ParseImage(size, show)
 
     @property
     def open_image(self):
@@ -32,7 +32,7 @@ class OpenImage(OpenFile):
 
 
 def main():
-    image = OpenImage('/home/shivam/Documents/', ['jpg'], size=(20, 20, 3)).open_image
+    image = OpenImage('/home/shivam/Documents/', ['jpg'], size=(200, 200, 0)).open_image
     print(image)
 
 
