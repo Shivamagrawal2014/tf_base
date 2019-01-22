@@ -81,7 +81,7 @@ class OpenFile(object):
                                 self._file_types[FileType.AUDIO] = list()
                             if _file_extension(file) not in self._file_types[FileType.AUDIO]:
                                 self._file_types[FileType.AUDIO].append(_file_extension(file))
-                            self._opened[file] = self._open_audio(os.path.join(folder, file))
+                            self._opened[os.path.basename(file)] = self._open_audio(os.path.join(folder, file))
 
                         # Image Handling
                         if _file_extension(file) in IMAGE_TYPE_EXTENSION:
@@ -89,7 +89,7 @@ class OpenFile(object):
                                 self._file_types[FileType.IMAGE] = list()
                             if _file_extension(file) not in self._file_types[FileType.IMAGE]:
                                 self._file_types[FileType.IMAGE].append(_file_extension(file))
-                            self._opened[file] = self._open_image(os.path.join(folder, file))
+                            self._opened[os.path.basename(file)] = self._open_image(os.path.join(folder, file))
 
                         # Document Handling
                         elif _file_extension(file) in DOC_TYPE_EXTENSION:
@@ -97,7 +97,7 @@ class OpenFile(object):
                                 self._file_types[FileType.DOC] = list()
                             if _file_extension(file) not in self._file_types[FileType.DOC]:
                                 self._file_types[FileType.DOC].append(_file_extension(file))
-                            self._opened[file] = self._open_document(os.path.join(folder, file))
+                            self._opened[os.path.basename(file)] = self._open_document(os.path.join(folder, file))
 
                         # URL Handling
                         elif _file_extension(file) in URL_TYPE_EXTENSION:
@@ -105,7 +105,7 @@ class OpenFile(object):
                                 self._file_types[FileType.URL] = list()
                             if _file_extension(file) not in self._file_types[FileType.URL]:
                                 self._file_types[FileType.URL].append(_file_extension(file))
-                            self._opened[file] = self._open_url(os.path.join(folder, file))
+                            self._opened[os.path.basename(file)] = self._open_url(os.path.join(folder, file))
 
                         # SQL handling
                         elif _file_extension(file) in SQL_TYPE_EXTENSION:
@@ -113,7 +113,7 @@ class OpenFile(object):
                                 self._file_types[FileType.SQL] = list()
                             if _file_extension(file) not in self._file_types[FileType.SQL]:
                                 self._file_types[FileType.SQL].append(_file_extension(file))
-                            self._opened[file] = self._open_sql(os.path.join(folder, file))
+                            self._opened[os.path.basename(file)] = self._open_sql(os.path.join(folder, file))
 
                         else:
                             continue

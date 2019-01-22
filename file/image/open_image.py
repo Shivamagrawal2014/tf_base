@@ -29,11 +29,19 @@ class OpenImage(OpenFile):
         return file_path
 
 
-if __name__ == '__main__':
+def main():
     from pprint import pprint
-    image = OpenImage('/home/shivam/Documents', ['jpg'])
+    image = OpenImage('/home/shivam/Documents/test_images', ['jpg'])
     open_image = image.open_image
     image_files = image.image_files
     image_folders = image.image_folders
     image_folders_files = image.image_folder_files
+    pprint(open_image)
+    pprint(image_files)
+    pprint(image_folders)
     pprint(image_folders_files)
+
+
+if __name__ == '__main__':
+    main()
+
