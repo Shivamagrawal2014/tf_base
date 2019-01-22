@@ -35,10 +35,12 @@ class OpenFile(object):
                         _folder_dict[sub_folder] = found_files
 
             if any(files):
-                found_files = [file for file in files
-                                      if file.endswith(extension)]
+                found_files = [os.path.join(root, file) for file in files if file.endswith(extension)]
                 if any(found_files):
-                    _folder_dict[root] = found_files
+                    if os.path.basename(root) in _folder_dict:
+                        _folder_dict[os.path.basename(root)].extend(found_files)
+                    else:
+                        _folder_dict[os.path.basename(root)] = found_files
         return _folder_dict
 
     def _find_files(self, folder: str, extensions: List[str]):

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4dc2e976-380e-488e-98c6-a4b50a26cff3" name="Default" comment="">
+    <list default="true" id="4dc2e976-380e-488e-98c6-a4b50a26cff3" name="Default" comment="Changes made to Open File">
+      <change afterPath="$PROJECT_DIR$/file/image/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/file/image/open_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/file/image/parse_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/file/image/test_open_image.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/file/open_image/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/test_tf_graph_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph/test_tf_graph_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/tf_graph_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph/tf_graph_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/record/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/file/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/record/open_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/file/open_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/open_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/file/open_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/open_image/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/file/audio/__init__.py" afterDir="false" />
     </list>
     <ignored path="tf_base.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,11 +53,32 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/file/open_file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+            <state relative-caret-position="200">
+              <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/file/image/open_image.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/file/image/parse_image.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -111,6 +133,13 @@
         <option value="$PROJECT_DIR$/graph/tf_graph_api.py" />
         <option value="$PROJECT_DIR$/graph/test_tf_graph_api.py" />
         <option value="$PROJECT_DIR$/file/__init__.py" />
+        <option value="$PROJECT_DIR$/file/open_image/open_image.py" />
+        <option value="$PROJECT_DIR$/file/open_image/test_open_image.py" />
+        <option value="$PROJECT_DIR$/file/open_image/__init__.py" />
+        <option value="$PROJECT_DIR$/file/image/__init__.py" />
+        <option value="$PROJECT_DIR$/file/image/test_open_image.py" />
+        <option value="$PROJECT_DIR$/file/image/parse_image.py" />
+        <option value="$PROJECT_DIR$/file/image/open_image.py" />
         <option value="$PROJECT_DIR$/file/open_file.py" />
       </list>
     </option>
@@ -139,17 +168,6 @@
               <item name="tf_base" type="462c0819:PsiDirectoryNode" />
               <item name="file" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="tf_base" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tf_base" type="462c0819:PsiDirectoryNode" />
-              <item name="file" type="462c0819:PsiDirectoryNode" />
-              <item name="open_image" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tf_base" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tf_base" type="462c0819:PsiDirectoryNode" />
-              <item name="graph" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -172,7 +190,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_tf_graph_api">
+  <component name="RunManager" selected="Python.open_image (1)">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -192,7 +210,7 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration name="container" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="open_image (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tf_base" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -200,11 +218,53 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/file/image" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/container.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/file/image/open_image.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="open_image" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tf_base" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/file/open_image" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/file/open_image/open_image.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_open_image" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tf_base" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/file/image" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/file/image/test_open_image.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -257,9 +317,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.open_image (1)" />
+        <item itemvalue="Python.test_open_image" />
+        <item itemvalue="Python.open_image" />
         <item itemvalue="Python.test_tf_graph_api" />
         <item itemvalue="Python.tf_graph_api" />
-        <item itemvalue="Python.container" />
       </list>
     </recent_temporary>
   </component>
@@ -274,6 +336,21 @@
       <option name="presentableId" value="Default" />
       <updated>1543727097394</updated>
     </task>
+    <task id="LOCAL-00001" summary="Changes made to Open File">
+      <created>1548141725376</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1548141725376</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Changes made to Open File">
+      <created>1548141904265</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1548141904266</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -290,19 +367,19 @@
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49758455" weight="0.24944155" />
-      <window_info id="Structure" order="1" visible="true" weight="0.24944155" />
+      <window_info id="Structure" order="1" weight="0.24944155" />
       <window_info id="Favorites" order="2" sideWeight="0.5024155" side_tool="true" weight="0.24944155" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.07980456" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.13517915" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32954547" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32899022" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32792208" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.534202" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.2198697" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -332,6 +409,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/graph" />
     </ignored-roots>
+    <MESSAGE value="Changes made to Open File" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes made to Open File" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/graph/Lazyloader.ipynb" />
@@ -371,12 +450,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/file/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/graph/tf_graph_api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
           <caret line="312" column="22" selection-start-line="312" selection-start-column="22" selection-end-line="312" selection-end-column="22" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/image/test_open_image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -391,20 +490,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file/__init__.py">
+    <entry file="file://$PROJECT_DIR$/file/image/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state>
+          <caret column="43" lean-forward="true" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/image/parse_image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/image/open_image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/file/open_file.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        <state relative-caret-position="200">
+          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
