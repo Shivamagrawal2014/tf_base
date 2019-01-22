@@ -60,13 +60,13 @@ class Data(object):
     def __setitem__(self, token, value):
         try:
             _ = self._value[token]
-            assert isinstance(value, Descriptor.New)
+            assert isinstance(value, Descriptor.Put), 'Unsupported DataType'
             if isinstance(self._value.__getitem__(token), Descriptor.New):
                 assert self._edit is True, 'Currently Editing Option is in False mode'
-                print('Editing Token [{token}] to Value [{value}]'.format(token=token, value=value.newly))
-                self._value.__getitem__(token).newly = value.newly
+                print('Editing Token [{token}] to Value [{value}]'.format(token=token, value=value.value))
+                self._value.__getitem__(token).newly = value
             else:
-                print('Editing Token [{token}] to Value [{value}]'.format(token=token, value=value.newly))
+                print('Editing Token [{token}] to Value [{value}]'.format(token=token, value=value.value))
                 self._value.__setitem__(token, value)
         except (KeyError, IndexError):
             assert isinstance(value, Descriptor.New), "Unsupported Datatype"
@@ -128,10 +128,12 @@ def descriptor(dtype, allow_sparse=True, edit=False):
             self._edit = edit
 
         def new_val(self, value):
-            return self._as_value(self._put(value))
+            val = Descriptor.New()
+            val.newly = self._put(value)
+            return val
 
         def edit_val(self, value):
-            return self.new_val(Descriptor.Put(value))
+            return self._put(value)
 
         def __getitem__(self, token):
             return self._val.__getitem__(token)
@@ -146,12 +148,6 @@ def descriptor(dtype, allow_sparse=True, edit=False):
         def _put(value):
             return Descriptor.Put(value)
 
-        @staticmethod
-        def _as_value(put):
-            val = Descriptor.New()
-            val.newly = put
-            return val
-
         @property
         def edit(self):
             return self._edit
@@ -164,4 +160,11 @@ def descriptor(dtype, allow_sparse=True, edit=False):
             return str(self.value)
     return Desc(dtype, allow_sparse, edit)
 
+
+if __name__ == '__main__':
+    value = descriptor(list, allow_sparse=True, edit=True)
+    value[0] = value.new_val(2)
+    value[1] = value.new_val(300)
+    value[1] = value.edit_val(0.000)
+    print(value)
 

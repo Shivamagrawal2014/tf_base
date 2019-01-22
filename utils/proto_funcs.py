@@ -216,7 +216,7 @@ def each_tuple_elem(isinstance_func, t):
 
 
 def each_dict_elem_type_a_b(d, a, b):
-    return all([isinstance_type_a_or_b(d[x], a, b) for x in d.keys()])
+    return all([isinstance_type_a_or_b(d[x], a, b) for x in d])
 
 
 def each_tuple_or_list_elem_type_a_b(t_or_l, a, b):

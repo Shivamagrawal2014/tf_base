@@ -32,15 +32,19 @@ class DataList(object):
 
         if isinstance_list(value):
             assert each_tuple_or_list_elem_type_a_b(value, int, list)
-            if self._merge_all:
-                if isinstance_int(value):
+            if each_list_elem(isinstance_int, value):
+                if self._merge_all:
                     self._int_list[int_list_key] = self._int_list.new_val(
                         value=self._list_func.int64_list(value))
                 else:
                     self._int_list[int_list_key] = self._int_list.new_val(
                         value=apply_to_list_elem(self._list_func.int64_list, value))
             else:
-                if isinstance_int(value):
+                assert apply_to_list_elem(lambda x: each_list_elem(isinstance_int, x), value)
+                if self._merge_all:
+                    self._int_list[int_list_key] = self._int_list.new_val(
+                        value=self._list_func.int64_list(value))
+                else:
                     self._int_list[int_list_key] = self._int_list.new_val(
                         value=[self._list_func.int64_list(i) for i in value])
 
@@ -68,5 +72,9 @@ class DataList(object):
                         value=self._list_func.int64_list(value=val))
 
 
-
+if __name__ == '__main__':
+    data = DataList(merge_all=True)
+    data.int_list = [[1, 3, 5], [7, 8, 9]]
+    print(data.int_list['int_list'])
+    print(type(data.int_list['int_list']))
 
