@@ -118,7 +118,7 @@ class With(Graph):
         return method
 
     def with_graph(self, session_or_graph=None):
-        with super()._load_graph(session_or_graph=session_or_graph) as graph:
+        with super(With, self)._load_graph(session_or_graph=session_or_graph) as graph:
             if self._graph is None:
                 self._graph = graph
 
@@ -134,7 +134,7 @@ class With(Graph):
         return method
 
     def with_session(self, session_or_graph=None):
-        with super()._load_session(session_or_graph=session_or_graph) as session:
+        with super(With, self)._load_session(session_or_graph=session_or_graph) as session:
             if self._session is None:
                 self._session = session
 
@@ -150,7 +150,7 @@ class With(Graph):
         return method
 
     def with_default_graph(self, session_or_graph=None):
-        with super()._load_graph(session_or_graph=session_or_graph) as default_graph:
+        with super(With, self)._load_graph(session_or_graph=session_or_graph) as default_graph:
             if self._default_graph is None:
                 self._default_graph = default_graph
 
@@ -166,7 +166,7 @@ class With(Graph):
         return method
 
     def with_default_session(self, session_or_graph=None):
-        with super()._load_session(session_or_graph=session_or_graph) as default_session:
+        with super(With, self)._load_session(session_or_graph=session_or_graph) as default_session:
             if self._default_session is None:
                 self._default_session = default_session
 
@@ -260,16 +260,16 @@ def make_context_meta_class(decorators, graph=None, session=None):
             return cls
 
         def __init__(cls, name, bases, namespace):
-            super().__init__(name, bases, namespace)
+            super(MakeContext, cls).__init__(name, bases, namespace)
 
     return MakeContext
 
 
 class ContextClass(With):
     def __init__(self):
-        super().__init__()
-        self._graph = super()._g()
-        self._session = super()._s()
+        super(ContextClass, self).__init__()
+        self._graph = super(ContextClass, self)._g()
+        self._session = super(ContextClass, self)._s()
         self._context = None
 
     @property
@@ -310,7 +310,7 @@ class ContextClass(With):
 class GraphAPI(ContextClass):
 
     def __init__(self, session_or_graph=None, reuse_variables=None, log=None):
-        super().__init__()
+        super(GraphAPI, self).__init__()
         self._session_or_graph = session_or_graph
         self._reuse_variables = reuse_variables
         self._log = log

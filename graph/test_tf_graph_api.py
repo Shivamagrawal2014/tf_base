@@ -10,7 +10,15 @@ def main():
     class Api(metaclass=graph_api()):
 
         def __init__(self):
-            super().__init__()
+            super(Api, self).__init__()
+
+        @property
+        def graph(self):
+            return super(Api, self).graph
+
+        @property
+        def session(self):
+            return super(Api, self).session
 
     class Meta(Api):
 
@@ -28,7 +36,7 @@ def main():
     class TestAPI(TestCase):
 
         def __init__(self):
-            super().__init__()
+            super(TestAPI, self).__init__()
             self._meta = Meta()
             self._reader = Reader()
 

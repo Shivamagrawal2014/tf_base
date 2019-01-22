@@ -1,13 +1,12 @@
 import os
 from enum import Enum
-from typing import List
-from glob import glob
 
 
-IMAGE_TYPE_EXTENSION = ['jpeg', 'png']
-AUDIO_TYPE_EXTENSION = ['mp3', 'wav']
+IMAGE_TYPE_EXTENSION = ['jpeg', 'png', 'jpg']
+AUDIO_TYPE_EXTENSION = ['mp3', 'wav', 'mp4']
 DOC_TYPE_EXTENSION = ['pdf', 'txt', 'json', 'doc', 'docx']
 URL_TYPE_EXTENSION = ['html']
+SQL_TYPE_EXTENSION = ['sql']
 
 
 class FileType(Enum):
@@ -15,6 +14,7 @@ class FileType(Enum):
     IMAGE = 'image'
     URL = 'html'
     DOC = 'doc'
+    SQL = 'sql'
 
 
 def _is_string(folder):
@@ -37,4 +37,4 @@ def _is_clean_folder(folder):
 
 
 def _file_extension(file_name):
-    return os.path.splitext(file_name)[1]
+    return os.path.splitext(file_name)[1][1:]
