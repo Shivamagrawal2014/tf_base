@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dc2e976-380e-488e-98c6-a4b50a26cff3" name="Default" comment="Changes made to OpenFile dictionary">
+      <change afterPath="$PROJECT_DIR$/utils/proto_funcs.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/image/open_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/file/image/open_image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/image/parse_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/file/image/parse_image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/image/test_open_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/file/image/test_open_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/container.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/container.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/protofy.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/protofy.py" afterDir="false" />
     </list>
     <ignored path="tf_base.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/file/open_file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-626">
-              <caret line="88" selection-start-line="88" selection-end-line="88" />
+            <state relative-caret-position="1215">
+              <caret line="81" selection-start-line="81" selection-end-line="81" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -38,22 +38,58 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/file/image/open_image.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state>
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/file/image/parse_image.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/protofy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-360">
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/file/image/parse_image.py">
+        <entry file="file://$PROJECT_DIR$/utils/container.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="300">
+              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/proto_funcs.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
-                <element signature="e#0#16#0" expanded="true" />
+                <element signature="e#1150#1462#0" />
+                <element signature="e#1518#1826#0" />
+                <element signature="e#1882#2194#0" />
+                <element signature="e#2543#2884#0" />
+                <element signature="e#2943#3280#0" />
+                <element signature="e#3339#3680#0" />
               </folding>
             </state>
           </provider>
@@ -84,9 +120,7 @@
         <option value="$PROJECT_DIR$/graph/tf_sonnet.py" />
         <option value="$PROJECT_DIR$/graph/function.log" />
         <option value="$PROJECT_DIR$/graph/Lazyloader.ipynb" />
-        <option value="$PROJECT_DIR$/utils/container.py" />
         <option value="$PROJECT_DIR$/graph/main.&lt;locals&gt;.Api.__init__.log" />
-        <option value="$PROJECT_DIR$/utils/protofy.py" />
         <option value="$PROJECT_DIR$/record/__init__.py" />
         <option value="$PROJECT_DIR$/record/open_file.py" />
         <option value="$PROJECT_DIR$/graph/tf_graph_api.py" />
@@ -98,8 +132,11 @@
         <option value="$PROJECT_DIR$/file/image/__init__.py" />
         <option value="$PROJECT_DIR$/file/open_file.py" />
         <option value="$PROJECT_DIR$/file/image/test_open_image.py" />
-        <option value="$PROJECT_DIR$/file/image/open_image.py" />
         <option value="$PROJECT_DIR$/file/image/parse_image.py" />
+        <option value="$PROJECT_DIR$/file/image/open_image.py" />
+        <option value="$PROJECT_DIR$/utils/proto_funcs.py" />
+        <option value="$PROJECT_DIR$/utils/protofy.py" />
+        <option value="$PROJECT_DIR$/utils/container.py" />
       </list>
     </option>
   </component>
@@ -130,8 +167,7 @@
             <path>
               <item name="tf_base" type="b2602c69:ProjectViewProjectNode" />
               <item name="tf_base" type="462c0819:PsiDirectoryNode" />
-              <item name="file" type="462c0819:PsiDirectoryNode" />
-              <item name="image" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -336,7 +372,21 @@
       <option name="project" value="LOCAL" />
       <updated>1548148863169</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Changes made to OpenFile dictionary">
+      <created>1548152276478</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1548152276478</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Changes made to OpenFile dictionary">
+      <created>1548153929091</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1548153929091</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -358,7 +408,7 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.50162864" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23127036" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -372,20 +422,21 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49758455" visible="true" weight="0.24944155" />
-      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49758455" weight="0.24944155" />
+      <window_info id="Structure" order="1" weight="0.24944155" />
       <window_info id="Favorites" order="2" sideWeight="0.5024155" side_tool="true" weight="0.24944155" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.071428575" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32954547" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32792208" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.097402595" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32899022" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.23127036" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39935064" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32899022" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32899022" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.32792208" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.048859935" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -418,20 +469,6 @@
           <folding>
             <element signature="e#741#779#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/protofy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/container.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -487,8 +524,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/file/open_file.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-626">
-          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        <state relative-caret-position="1215">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -497,21 +534,51 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/file/image/open_image.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state>
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/file/image/parse_image.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/protofy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/proto_funcs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#1150#1462#0" />
+            <element signature="e#1518#1826#0" />
+            <element signature="e#1882#2194#0" />
+            <element signature="e#2543#2884#0" />
+            <element signature="e#2943#3280#0" />
+            <element signature="e#3339#3680#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/container.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
         </state>
       </provider>
     </entry>
