@@ -13,7 +13,7 @@ from file import _is_clean_folder, _file_extension
 
 class OpenFile(object):
 
-    def __init__(self, folder:str, extensions:List[str]):
+    def __init__(self, folder: str, extensions: List[str]):
         self._folder = folder
         self._extensions = extensions
         self._opened = False
@@ -21,6 +21,7 @@ class OpenFile(object):
         self._extension_folder_files = None
         self._extension_folder = None
         self._extension_files = None
+        self(folder, extensions)
 
     @staticmethod
     def _files_with_extension(folder: str, extension: str):
@@ -145,3 +146,8 @@ class OpenFile(object):
 
     def _parse_sql(self, sql_file):
         return NotImplemented
+
+    def __call__(self, folder: str, extensions: List[str]):
+        _ = self._find_files(folder, extensions)
+        _ = self._extensions_to_files
+        _ = self._extensions_to_folder
