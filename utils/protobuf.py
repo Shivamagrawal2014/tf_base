@@ -1186,7 +1186,8 @@ def protofy_sequence(context_dict, sequence_dict):
 
 if __name__ == '__main__':
     import cProfile
-    cProfile.run('protofy(int_dict={\'testing_int\': [[1, 3, 5], [1, 3, 5]]})')
+    cProfile.run('protofy(int_dict={\'testing_int\': [[1], [1, 3, 5]]})')
+    cProfile.run('test_CreateFeature()')
 
 
 

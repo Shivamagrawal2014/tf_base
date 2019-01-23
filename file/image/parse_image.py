@@ -1,6 +1,7 @@
 import cv2 as cv
 from typing import Tuple
 from matplotlib import pyplot as plt
+from utils.protobuf import protofy
 
 
 class ParseImage(object):
@@ -26,4 +27,6 @@ class ParseImage(object):
             plt.imshow(image, cmap='gray', interpolation='bicubic')
             plt.xticks([]), plt.yticks([])  # to hide tick values on X and Y axis
             plt.show()
-        return image, image.shape
+        shape = image.shape
+        image = image.tostring()
+        return protofy(byte_dict={'pixel': image}, int_dict={'shape': list(shape)})['mixedfeatures'].SerializeToString()

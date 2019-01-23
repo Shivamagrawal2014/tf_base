@@ -32,7 +32,7 @@ class OpenImage(OpenFile):
 
 
 def main():
-    image = OpenImage('/home/shivam/Documents/', ['jpg'], size=(200, 200, 0)).open_image
+    image = OpenImage('/home/shivam/Documents/', ['jpg'], size=(500, 500, 0), show=True).open_image
     print(image)
 
 
