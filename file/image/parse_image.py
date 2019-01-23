@@ -29,4 +29,4 @@ class ParseImage(object):
             plt.show()
         shape = image.shape
         image = image.tostring()
-        return protofy(byte_dict={'pixel': image}, int_dict={'shape': list(shape)})['mixedfeatures']
+        return protofy(byte_dict={'pixel': image}, int_dict={'shape': list(shape)})

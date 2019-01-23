@@ -18,9 +18,9 @@ class TFRecordWriterBase(object):
                                      tf.python_io.TFRecordCompressionType.NONE)
 
         if allow_compression in (True, 'GZIP', tf.python_io.TFRecordCompressionType.GZIP):
-            option = tf.python_io.TFRecordCompressionType.GZIP
+            option = tf.python_io.TFRecordOptions(tf.python_io.TFRecordCompressionType.GZIP)
         elif allow_compression in (False, 'ZLIB', tf.python_io.TFRecordCompressionType.ZLIB):
-            option = tf.python_io.TFRecordCompressionType.ZLIB
+            option = tf.python_io.TFRecordOptions(tf.python_io.TFRecordCompressionType.ZLIB)
         else:
             option = tf.python_io.TFRecordCompressionType.NONE
         return option
@@ -62,12 +62,11 @@ class TFRecordWriterBase(object):
         """
         return list(map(lambda x: x.SerializeToString(), examples))
 
-    def _to_tfr(self, tfrecord_name, tf_folder, allow_compression=None):
-        _features = list(self._features().values())
-        _examples = self._example(_features)
+    def _to_tfr(self, tfrecord_name, tfrecord_folder, allow_compression=None):
+        _examples = self._features_to_examples()
         _serialized_examples = self._serialize_examples(_examples)
 
-        tf_path = os.path.join(tf_folder, self._create_tf_record_name(tfrecord_name))
+        tf_path = os.path.join(tfrecord_folder, self._create_tf_record_name(tfrecord_name))
         file = self._writer(tf_path, allow_compression)
         eg_counter = 0
         with file:
@@ -76,5 +75,6 @@ class TFRecordWriterBase(object):
                 file.write(_example)
                 print('written eg: - {count}.'.format(count=eg_counter))
         print('Completed!')
+        return tf_path
 
 

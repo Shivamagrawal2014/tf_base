@@ -1175,7 +1175,7 @@ class Protofy(object):
 def protofy(int_dict=None, float_dict=None, byte_dict=None):
     _proto = Protofy(int_dict=int_dict, float_dict=float_dict, byte_dict=byte_dict)
     _ = _proto.feature
-    return _proto.dict
+    return _proto.dict['mixedfeatures']
 
 
 def protofy_sequence(context_dict, sequence_dict):
