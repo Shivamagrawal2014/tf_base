@@ -5,7 +5,7 @@ import os
 class TFRecordWriterBase(object):
 
     def _features(self):
-        return NotImplementedError
+        return NotImplemented
 
     def _options(self, allow_compression=True):
         """
@@ -76,5 +76,8 @@ class TFRecordWriterBase(object):
                 print('written eg: - {count}.'.format(count=eg_counter))
         print('Completed!')
         return tf_path
+
+
+
 
 

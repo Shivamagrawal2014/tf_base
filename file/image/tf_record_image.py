@@ -1,4 +1,4 @@
-from record.tf_record import TFRecordWriterBase
+from record.tf_record_writer import TFRecordWriterBase
 from file.image.open_image import OpenImage
 from typing import List, Tuple
 
@@ -23,5 +23,5 @@ class ImageTFRecordWriter(TFRecordWriterBase):
 if __name__ == '__main__':
     images = ImageTFRecordWriter('/home/shivam/Documents/', ['jpg'],
                                  size=(50, 50, 0), show=False)
-    images.to_tfr(tfrecord_name='ubuntu_images2',
+    images.to_tfr(tfrecord_name='ubuntu_images',
                   save_folder='/home/shivam/Documents/', allow_compression=True)
