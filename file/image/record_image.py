@@ -1,5 +1,5 @@
-from file.record.tf_record_writer import TFRecordWriterBase
-from file.record.tf_record_reader import TFRecordExampleReader
+from file.record.record_writer import TFRecordWriterBase
+from file.record.record_reader import TFRecordExampleReader
 from file.image.open_image import OpenImage
 from typing import List, Tuple
 from file.record.protofy import protofy
@@ -37,8 +37,8 @@ class ImageTFRecordReader(TFRecordExampleReader, metaclass=Graph()):
     def __init__(self, is_sequence_example):
         super(ImageTFRecordReader, self).__init__(is_sequence_example)
 
-    # def _feature_map(self, feature_dict: dict=None):
-    #     self.
+    def _feature_map(self, feature_dict: dict=None):
+        return {}
 
 
 if __name__ == '__main__':
