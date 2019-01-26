@@ -51,9 +51,15 @@ class ImageTFRecordReader(TFRecordExampleReader):
     def feature_parser(self):
         def _parser(parsed_single_example):
             example = parsed_single_example
-            pixel = tf.decode_raw(example['pixel'], out_type=tf.int64, name='decode_raw_pixel')
+
+            pixel = tf.decode_raw(
+                example['pixel'], out_type=tf.int64, name='decode_raw_pixel')
+
             pixel = tf.cast(pixel, dtype=tf.uint8, name='cast_pixel_to_uint8')
-            shape = tf.map_fn(lambda x: tf.cast(x, dtype=tf.int32, name='shape_cast'), example['shape'])
+
+            shape = tf.map_fn(
+                lambda x: tf.cast(x, dtype=tf.int32, name='shape_cast'), example['shape'])
+
             pixel = tf.reshape(pixel, shape)
             return pixel, shape
         return _parser
@@ -63,15 +69,15 @@ class ImageTFRecordReader(TFRecordExampleReader):
               buffer_size=10000,
               batch_size=15,
               epochs_size=2000):
-        self._get_batch(self,
-                        tf_path,
-                        buffer_size=10000,
-                   batch_size=15,
-                   epochs_size=2000)
+        self._get_batch(self, tf_path, buffer_size, batch_size, epochs_size)
 
 
 if __name__ == '__main__':
-    images = ImageTFRecordWriter('/home/shivam/Documents/', ['jpg'],
-                                 size=(50, 50, 0), show=False)
-    images.to_tfr(tfrecord_name='ubuntu_images1',
-                  save_folder='/home/shivam/Documents/', allow_compression=True)
+    # images = ImageTFRecordWriter('/home/shivam/Documents/', ['jpg'],
+    #                              size=(50, 50, 0), show=False)
+    # record = images.to_tfr(tfrecord_name='ubuntu_images3',
+    #                        save_folder='/home/shivam/Documents/', allow_compression=True)
+
+    reader = ImageTFRecordReader()
+
+    reader.
