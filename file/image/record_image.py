@@ -36,8 +36,7 @@ class ImageTFRecordWriter(TFRecordWriterBase, OpenImage):
         return self._to_tfr(tfrecord_name, save_folder, allow_compression)
 
 
-class ImageTFRecordReader(TFRecordExampleReader):
-    __metaclass__ = Graph()
+class ImageTFRecordReader(TFRecordExampleReader, metaclass=Graph()):
 
     def __init__(self):
         super(ImageTFRecordReader, self).__init__()
@@ -69,7 +68,7 @@ class ImageTFRecordReader(TFRecordExampleReader):
               buffer_size=10000,
               batch_size=15,
               epochs_size=2000):
-        self._get_batch(self, tf_path, buffer_size, batch_size, epochs_size)
+        return self._get_batch(tf_path, buffer_size, batch_size, epochs_size)
 
 
 if __name__ == '__main__':
@@ -80,4 +79,18 @@ if __name__ == '__main__':
 
     reader = ImageTFRecordReader()
 
-    reader.example_parser()
+    data = reader.batch(tf_path=r'/home/shivam/Documents/ubuntu_images3.tfr')
+    data = data.make_one_shot_iterator()
+    # init = data.initializer
+    sess = reader.session
+    # sess.run(init)
+    data = data.get_next()
+    summarizer = reader._summary_writer('../summary', reader.graph)
+
+    with summarizer:
+        try:
+            for _ in range(21):
+                print((sess.run(data)[0]))
+            print('Completed!')
+        except tf.errors.OutOfRangeError:
+            print('Data Exhausted!')
