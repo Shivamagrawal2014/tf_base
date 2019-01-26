@@ -28,6 +28,7 @@ class ImageTFRecordWriter(TFRecordWriterBase, OpenImage):
             if hasattr(image, 'tostring'):
                 image = image.tostring()
             else:
+                print(type(image))
                 image = image.encode('utf-8')
         return protofy(byte_dict={'pixel': image}, int_dict={'shape': list(shape)})
 
@@ -36,7 +37,7 @@ class ImageTFRecordWriter(TFRecordWriterBase, OpenImage):
 
 
 class ImageTFRecordReader(TFRecordExampleReader):
-    __metaclass__ = metaclass=Graph()
+    __metaclass__ = metaclass = Graph()
 
     def __init__(self):
         super(ImageTFRecordReader, self).__init__()
@@ -44,8 +45,9 @@ class ImageTFRecordReader(TFRecordExampleReader):
     def feature_map(self, feature_dict: dict=None):
         return feature_dict or {'pixel': tf.FixedLenFeature([], dtype=tf.string),
                                 'shape': tf.FixedLenFeature([3], dtype=tf.int64)}
-    def feature_parser(self):
 
+    def feature_parser(self):
+        pass
 
 
 if __name__ == '__main__':
