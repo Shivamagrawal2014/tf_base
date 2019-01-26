@@ -37,17 +37,37 @@ class ImageTFRecordWriter(TFRecordWriterBase, OpenImage):
 
 
 class ImageTFRecordReader(TFRecordExampleReader):
-    __metaclass__ = metaclass = Graph()
+    __metaclass__ = Graph()
 
     def __init__(self):
         super(ImageTFRecordReader, self).__init__()
 
-    def feature_map(self, feature_dict: dict=None):
-        return feature_dict or {'pixel': tf.FixedLenFeature([], dtype=tf.string),
-                                'shape': tf.FixedLenFeature([3], dtype=tf.int64)}
+    @property
+    def feature_map(self):
+        return {'pixel': tf.FixedLenFeature([], dtype=tf.string),
+                'shape': tf.FixedLenFeature([3], dtype=tf.int64)}
 
+    @property
     def feature_parser(self):
-        pass
+        def _parser(parsed_single_example):
+            example = parsed_single_example
+            pixel = tf.decode_raw(example['pixel'], out_type=tf.int64, name='decode_raw_pixel')
+            pixel = tf.cast(pixel, dtype=tf.uint8, name='cast_pixel_to_uint8')
+            shape = tf.map_fn(lambda x: tf.cast(x, dtype=tf.int32, name='shape_cast'), example['shape'])
+            pixel = tf.reshape(pixel, shape)
+            return pixel, shape
+        return _parser
+
+    def batch(self,
+              tf_path,
+              buffer_size=10000,
+              batch_size=15,
+              epochs_size=2000):
+        self._get_batch(self,
+                        tf_path,
+                        buffer_size=10000,
+                   batch_size=15,
+                   epochs_size=2000)
 
 
 if __name__ == '__main__':
