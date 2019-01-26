@@ -1,22 +1,24 @@
 from file.record.tf_record_writer import TFRecordWriterBase
-from file.record import TFRecordReaderBase
+from file.record.tf_record_reader import TFRecordExampleReader
 from file.image.open_image import OpenImage
 from typing import List, Tuple
-import tensorflow as tf
-from utils.protobuf import protofy
+from file.record.protofy import protofy
+from graph.tf_graph_api import GraphAPI
+
+Graph = GraphAPI()
 
 
-class ImageFeature(OpenImage):
+class ImageTFRecordWriter(TFRecordWriterBase, OpenImage):
 
-    def __init__(self, folder: str,
-                 extensions: List[str],
-                 size: Tuple[int, int, int] = None,
-                 show=False):
+    def __init__(self, folder: str, extensions: List[str],
+                 size: Tuple[int, int, int] = None, show=False):
+        super(ImageTFRecordWriter, self).__init__(folder=folder,
+                                                  extensions=extensions,
+                                                  size=size,
+                                                  show=show)
 
-        super(ImageFeature, self).__init__(folder=folder,
-                                           extensions=extensions,
-                                           size=size,
-                                           show=show)
+    def _features(self):
+        return self.open_image
 
     def _protofy_image(self, image, shape):
         if not isinstance(image, (str, bytes)):
@@ -26,36 +28,17 @@ class ImageFeature(OpenImage):
                 image = image.encode('utf-8')
         return protofy(byte_dict={'pixel': image}, int_dict={'shape': list(shape)})
 
-
-class ImageTFRecordWriter(TFRecordWriterBase):
-
-    def __init__(self, folder: str, extensions: List[str],
-                 size: Tuple[int, int, int] = None, show=False):
-        super(ImageTFRecordWriter, self).__init__()
-        self._images = ImageFeature(folder=folder,
-                                    extensions=extensions,
-                                    size=size,
-                                    show=show)
-
-    def _features(self):
-        return self._images.open_image
-
     def to_tfr(self, tfrecord_name, save_folder, allow_compression=None):
         return self._to_tfr(tfrecord_name, save_folder, allow_compression)
 
 
-class ImageTFRecordReader(TFRecordReaderBase):
+class ImageTFRecordReader(TFRecordExampleReader, metaclass=Graph()):
 
     def __init__(self, is_sequence_example):
         super(ImageTFRecordReader, self).__init__(is_sequence_example)
 
     # def _feature_map(self, feature_dict: dict=None):
     #     self.
-
-
-def image_mapping():
-    return {'pixel': tf.FixedLenFeature([], dtype=tf.string),
-            'shape': tf.FixedLenFeature([3], dtype=tf.int64)}
 
 
 if __name__ == '__main__':
