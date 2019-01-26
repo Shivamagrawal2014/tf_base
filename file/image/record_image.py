@@ -80,4 +80,4 @@ if __name__ == '__main__':
 
     reader = ImageTFRecordReader()
 
-    reader.
+    reader.example_parser()
