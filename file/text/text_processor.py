@@ -792,6 +792,11 @@ def mc_words(word_lists):
     return Counter(mc_words).most_common()
 
 
+clean_up = WordList(parser=en_parser,
+                    remove_if_all=None,  #remove_if_all_words,
+                    remove_if_any=None)  #remove_if_any_words)
+
+
 def clean_word_list(json_path_or_dict_or_words_list,
                     parser,
                     remove_if_all,
@@ -807,11 +812,6 @@ def clean_word_list(json_path_or_dict_or_words_list,
         assert isinstance(json_path_or_dict_or_words_list, list)
         words_list_in_list = wlf(json_path_or_dict_or_words_list)
     return words_list_in_list
-
-
-clean_up = WordList(parser=en_parser,
-                    remove_if_all=remove_if_all_words,
-                    remove_if_any=remove_if_any_words)
 
 
 class WordContexts(object):
@@ -935,4 +935,4 @@ class WordContexts(object):
 
 
 if __name__ == '__main__':
-    cProfile.run('print(clean_up([\'Hello and How!! ---   are You Man ??\'.split()*10000]))')
+    cProfile.run('print(clean_up([\'Hello and How!! ---  1o8u3[qdjqqwoq ue2 2]  ]e]0    ie9p    3que    2 are You Man ??\'.split()*10000]))')

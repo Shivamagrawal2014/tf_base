@@ -28,11 +28,16 @@ class OpenImage(OpenFile):
         return self._extensions_to_files
 
     def _parse_image(self, file_path):
-        return self.__parse_image(file_path)
+        image, shape = self.__parse_image(file_path)
+        return self._protofy_image(image, shape)
+
+    def _protofy_image(self, image, shape):
+        return NotImplemented
 
 
 def main():
-    image = OpenImage('/home/shivam/Documents/', ['jpg'], size=(500, 500, 0), show=True).open_image
+    image = OpenImage('/home/shivam/Documents/', ['jpg'],
+                      size=(500, 500, 0), show=False).open_image
     print(image)
 
 

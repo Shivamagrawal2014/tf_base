@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dc2e976-380e-488e-98c6-a4b50a26cff3" name="Default" comment="Changes made to record">
-      <change afterPath="$PROJECT_DIR$/file/text/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file/text/text_processor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/record/tf_record_reader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/image/tf_record_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/file/image/tf_record_image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/record/tf_record.py" beforeDir="false" afterPath="$PROJECT_DIR$/record/tf_record_writer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/image/open_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/file/image/open_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/image/parse_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/file/image/parse_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/image/test_open_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/file/image/test_open_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/image/tf_record_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/file/image/record_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/text/text_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/file/text/text_processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/record/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/file/image/process_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/record/tf_record_reader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/record/tf_record_writer.py" beforeDir="false" />
     </list>
     <ignored path="tf_base.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +31,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/file/open_file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-388">
+            <state relative-caret-position="1215">
               <caret line="81" selection-start-line="81" selection-end-line="81" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -38,34 +41,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/record/tf_record_reader.py">
+        <entry file="file://$PROJECT_DIR$/file/record/tf_record_reader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3218">
-              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+            <state relative-caret-position="3390">
+              <caret line="230" column="26" lean-forward="true" selection-start-line="230" selection-start-column="26" selection-end-line="230" selection-end-column="26" />
               <folding>
-                <element signature="e#1#24#0" expanded="true" />
-                <element signature="e#603#623#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/container.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1650">
-              <caret line="110" selection-start-line="110" selection-end-line="110" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/file/text/text_processor.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="926" lean-forward="true" selection-start-line="926" selection-end-line="926" />
-              <folding>
-                <element signature="e#0#53#0" expanded="true" />
+                <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#552#572#0" />
               </folding>
             </state>
           </provider>
@@ -74,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/file/image/open_image.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="615">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -84,12 +66,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file/image/tf_record_image.py">
+        <entry file="file://$PROJECT_DIR$/file/image/test_open_image.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="5" column="46" lean-forward="true" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+            <state relative-caret-position="205">
+              <caret line="14" column="97" lean-forward="true" selection-start-line="14" selection-start-column="97" selection-end-line="14" selection-end-column="97" />
               <folding>
-                <element signature="e#0#47#0" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/file/image/record_image.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="118">
+              <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#54#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/file/image/parse_image.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="31" column="83" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
+            <state relative-caret-position="390">
+              <caret line="26" column="47" lean-forward="true" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
@@ -108,10 +102,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/record/tf_record_writer.py">
+        <entry file="file://$PROJECT_DIR$/file/record/tf_record_writer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-239">
-              <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            <state relative-caret-position="90">
+              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -155,23 +149,25 @@
         <option value="$PROJECT_DIR$/file/open_image/__init__.py" />
         <option value="$PROJECT_DIR$/file/image/__init__.py" />
         <option value="$PROJECT_DIR$/file/open_file.py" />
-        <option value="$PROJECT_DIR$/file/image/test_open_image.py" />
         <option value="$PROJECT_DIR$/utils/container.py" />
         <option value="$PROJECT_DIR$/utils/protofy.py" />
         <option value="$PROJECT_DIR$/utils/proto_funcs.py" />
         <option value="$PROJECT_DIR$/record.py" />
-        <option value="$PROJECT_DIR$/file/image/open_image.py" />
         <option value="$PROJECT_DIR$/graph/tf_variables.py" />
         <option value="$PROJECT_DIR$/graph/__init__.py" />
-        <option value="$PROJECT_DIR$/file/image/parse_image.py" />
         <option value="$PROJECT_DIR$/utils/protobuf.py" />
         <option value="$PROJECT_DIR$/record/tf_record.py" />
         <option value="$PROJECT_DIR$/file/image/tf_image_record.py" />
         <option value="$PROJECT_DIR$/file/text.py" />
-        <option value="$PROJECT_DIR$/record/tf_record_reader.py" />
         <option value="$PROJECT_DIR$/record/tf_record_writer.py" />
-        <option value="$PROJECT_DIR$/file/image/tf_record_image.py" />
         <option value="$PROJECT_DIR$/file/text/text_processor.py" />
+        <option value="$PROJECT_DIR$/file/image/tf_record_image.py" />
+        <option value="$PROJECT_DIR$/file/image/test_open_image.py" />
+        <option value="$PROJECT_DIR$/file/image/process_image.py" />
+        <option value="$PROJECT_DIR$/record/tf_record_reader.py" />
+        <option value="$PROJECT_DIR$/file/image/open_image.py" />
+        <option value="$PROJECT_DIR$/file/image/parse_image.py" />
+        <option value="$PROJECT_DIR$/file/image/record_image.py" />
       </list>
     </option>
   </component>
@@ -208,11 +204,6 @@
               <item name="tf_base" type="b2602c69:ProjectViewProjectNode" />
               <item name="tf_base" type="462c0819:PsiDirectoryNode" />
               <item name="file" type="462c0819:PsiDirectoryNode" />
-              <item name="text" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tf_base" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tf_base" type="462c0819:PsiDirectoryNode" />
               <item name="record" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -243,7 +234,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.text_processor">
+  <component name="RunManager" selected="Python.tf_image_record">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -262,6 +253,27 @@
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <method />
+    </configuration>
+    <configuration name="container" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tf_base" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/container.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="open_image (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tf_base" />
@@ -284,7 +296,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="protobuf" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test_open_image" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tf_base" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -292,32 +304,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/file/image" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/protobuf.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="protofy" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tf_base" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/protofy.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/file/image/test_open_image.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -359,7 +350,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/file/image/tf_record_image.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/file/image/record_image.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -370,11 +361,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.text_processor" />
         <item itemvalue="Python.tf_image_record" />
         <item itemvalue="Python.open_image (1)" />
-        <item itemvalue="Python.protobuf" />
-        <item itemvalue="Python.protofy" />
+        <item itemvalue="Python.test_open_image" />
+        <item itemvalue="Python.text_processor" />
+        <item itemvalue="Python.container" />
       </list>
     </recent_temporary>
   </component>
@@ -480,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1548269961242</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Changes made to record">
+      <created>1548438689934</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1548438689935</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -496,19 +494,19 @@
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49758455" visible="true" weight="0.24944155" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49758455" visible="true" weight="0.24944155" />
       <window_info id="Structure" order="1" weight="0.24944155" />
       <window_info id="Favorites" order="2" sideWeight="0.5024155" side_tool="true" weight="0.24944155" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.14169382" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.117263846" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32899022" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32792208" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.51140064" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.25407165" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -521,14 +519,14 @@
       <window_info id="Favorites" order="2" sideWeight="0.5024155" side_tool="true" weight="0.24944155" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6368078" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.14169382" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39935064" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32899022" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.32792208" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.51140064" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.25407165" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -564,16 +562,6 @@
           <caret line="268" column="47" lean-forward="true" selection-start-line="268" selection-start-column="47" selection-end-line="268" selection-end-column="47" />
           <folding>
             <element signature="e#741#779#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file/image/test_open_image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -621,7 +609,7 @@
     <entry file="file://$PROJECT_DIR$/utils/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/record/__init__.py">
+    <entry file="file://$PROJECT_DIR$/file/record/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/file/__init__.py">
@@ -644,30 +632,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph/tf_graph_api.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4665">
-          <caret line="311" column="46" selection-start-line="311" selection-start-column="46" selection-end-line="311" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/graph/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="39" selection-start-column="39" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/protobuf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10425">
-          <caret line="695" column="30" selection-start-line="695" selection-start-column="30" selection-end-line="695" selection-end-column="30" />
-          <folding>
-            <element signature="e#63#81#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -678,29 +646,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file/text.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file/image/parse_image.py">
+    <entry file="file://$PROJECT_DIR$/file/text.py" />
+    <entry file="file://$USER_HOME$/anaconda3/envs/tf_api/lib/python3.6/site-packages/tensorflow/python/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="31" column="83" selection-start-line="31" selection-start-column="83" selection-end-line="31" selection-end-column="83" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-950">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tf_api/lib/python3.6/site-packages/tensorflow/python/util/lazy_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="41" lean-forward="true" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/tf_api/lib/python3.6/site-packages/tensorflow/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/container.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        <state relative-caret-position="2415">
+          <caret line="161" lean-forward="true" selection-start-line="161" selection-end-line="161" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph/tf_graph_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3870">
+          <caret line="258" column="16" selection-start-line="258" selection-start-column="16" selection-end-line="258" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/text/text_processor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="935" lean-forward="true" selection-start-line="935" selection-end-line="935" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/image/process_image.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/protobuf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7028">
+          <caret line="695" column="30" selection-start-line="695" selection-start-column="30" selection-end-line="695" selection-end-column="30" />
+          <folding>
+            <element signature="e#63#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/record/tf_record_writer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/record/tf_record_reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3390">
+          <caret line="230" column="26" lean-forward="true" selection-start-line="230" selection-start-column="26" selection-end-line="230" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#552#572#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/file/open_file.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-388">
+        <state relative-caret-position="1215">
           <caret line="81" selection-start-line="81" selection-end-line="81" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -708,53 +739,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/file/image/parse_image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="47" lean-forward="true" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/file/image/open_image.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="615">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file/image/tf_record_image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="5" column="46" lean-forward="true" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/record/tf_record_writer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-239">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/record/tf_record_reader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3218">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-          <folding>
-            <element signature="e#1#24#0" expanded="true" />
-            <element signature="e#603#623#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file/text/text_processor.py">
+    <entry file="file://$PROJECT_DIR$/file/image/test_open_image.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
-          <caret line="926" lean-forward="true" selection-start-line="926" selection-end-line="926" />
+          <caret line="14" column="97" lean-forward="true" selection-start-line="14" selection-start-column="97" selection-end-line="14" selection-end-column="97" />
           <folding>
-            <element signature="e#0#53#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/image/record_image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
