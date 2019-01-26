@@ -1,9 +1,12 @@
 from file.record.record_writer import TFRecordWriterBase
 from file.record.record_reader import TFRecordExampleReader
 from file.image.open_image import OpenImage
-from typing import List, Tuple
 from file.record.protofy import protofy
 from graph.tf_graph_api import GraphAPI
+
+from typing import List, Tuple
+import tensorflow as tf
+
 
 Graph = GraphAPI()
 
@@ -32,13 +35,17 @@ class ImageTFRecordWriter(TFRecordWriterBase, OpenImage):
         return self._to_tfr(tfrecord_name, save_folder, allow_compression)
 
 
-class ImageTFRecordReader(TFRecordExampleReader, metaclass=Graph()):
+class ImageTFRecordReader(TFRecordExampleReader):
+    __metaclass__ = metaclass=Graph()
 
-    def __init__(self, is_sequence_example):
-        super(ImageTFRecordReader, self).__init__(is_sequence_example)
+    def __init__(self):
+        super(ImageTFRecordReader, self).__init__()
 
-    def _feature_map(self, feature_dict: dict=None):
-        return {}
+    def feature_map(self, feature_dict: dict=None):
+        return feature_dict or {'pixel': tf.FixedLenFeature([], dtype=tf.string),
+                                'shape': tf.FixedLenFeature([3], dtype=tf.int64)}
+    def feature_parser(self):
+
 
 
 if __name__ == '__main__':
