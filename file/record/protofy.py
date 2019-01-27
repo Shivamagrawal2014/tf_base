@@ -828,7 +828,8 @@ class ToProto(object):
                         if isinstancedictval(value, list):
                             if isinstancelistvalindict(value, tf.train.Feature):
                                 self._mixedfeatures['mixedfeatures'] = \
-                                    self._mixedfeatures.newval(tf.train.FeatureLists(feature_list=cast_dict_val_to_feature_list(value)))
+                                    self._mixedfeatures.newval(
+                                        tf.train.FeatureLists(feature_list=cast_dict_val_to_feature_list(value)))
                             else:
                                 raise TypeError('Expected dict type input with Feature Values')
 
@@ -1175,7 +1176,9 @@ class Protofy(object):
 def protofy(int_dict=None, float_dict=None, byte_dict=None):
     _proto = Protofy(int_dict=int_dict, float_dict=float_dict, byte_dict=byte_dict)
     _ = _proto.feature
-    return _proto.dict['mixedfeatures']
+    proto = _proto.dict['mixedfeatures']
+    del _proto
+    return proto
 
 
 def protofy_sequence(context_dict, sequence_dict):
