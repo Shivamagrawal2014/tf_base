@@ -41,10 +41,9 @@ class ImageTFRecordReader(TFRecordExampleReader, metaclass=Graph()):
     def __init__(self):
         super(ImageTFRecordReader, self).__init__()
 
-    @property
     def feature_map(self):
         return {'pixel': tf.FixedLenFeature([], dtype=tf.string),
-                'shape': tf.FixedLenFeature([], dtype=tf.int64)}
+                'shape': tf.FixedLenFeature([3], dtype=tf.int64)}
 
     def feature_parser(self, parsed_single_example):
 
