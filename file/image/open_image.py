@@ -14,7 +14,6 @@ class OpenImage(OpenFile):
     @property
     def open_image(self):
         return self._open_files()
-
     @property
     def image_folder_files(self):
         return self._extension_folder_files
