@@ -3,7 +3,7 @@ from file.record.record_reader import TFRecordExampleReader
 from file.image.open_image import OpenImage
 from file.record.protofy import protofy
 from graph.tf_graph_api import GraphAPI
-
+from tensorflow.python import debug as tf_debug
 from typing import List, Tuple
 import tensorflow as tf
 
@@ -44,24 +44,22 @@ class ImageTFRecordReader(TFRecordExampleReader, metaclass=Graph()):
     @property
     def feature_map(self):
         return {'pixel': tf.FixedLenFeature([], dtype=tf.string),
-                'shape': tf.FixedLenFeature([3], dtype=tf.int64)}
+                'shape': tf.FixedLenFeature([], dtype=tf.int64)}
 
-    @property
-    def feature_parser(self):
-        def _parser(parsed_single_example):
-            example = parsed_single_example
+    def feature_parser(self, parsed_single_example):
 
-            pixel = tf.decode_raw(
-                example['pixel'], out_type=tf.int64, name='decode_raw_pixel')
+        example = parsed_single_example
 
-            pixel = tf.cast(pixel, dtype=tf.uint8, name='cast_pixel_to_uint8')
+        pixel = tf.decode_raw(
+            example['pixel'], out_type=tf.int64, name='decode_raw_pixel')
 
-            shape = tf.map_fn(
-                lambda x: tf.cast(x, dtype=tf.int32, name='shape_cast'), example['shape'])
+        pixel = tf.cast(pixel, dtype=tf.uint8, name='cast_pixel_to_uint8')
 
-            pixel = tf.reshape(pixel, shape)
-            return pixel, shape
-        return _parser
+        shape = tf.map_fn(
+            lambda x: tf.cast(x, dtype=tf.int32, name='shape_cast'), example['shape'])
+
+        pixel = tf.reshape(pixel, shape)
+        return pixel, shape
 
     def batch(self,
               tf_path,
@@ -83,6 +81,7 @@ if __name__ == '__main__':
     data = data.make_one_shot_iterator()
     # init = data.initializer
     sess = reader.session
+    sess = tf_debug.LocalCLIDebugWrapperSession(sess)
     # sess.run(init)
     data = data.get_next()
     summarizer = reader._summary_writer('../summary', reader.graph)
