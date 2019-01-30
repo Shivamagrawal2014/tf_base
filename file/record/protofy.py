@@ -1,5 +1,90 @@
-"""
-Making the dictionary assignment and input controlled
+"""The Protofy API uses protofy function to convert raw data into
+   features with a simple call.
+
+>> protofy(int_dict={'testing_int': [[1], [1, 3, 5]]}))
+feature_list {
+  key: "testing_int"
+  value {
+    feature {
+      int64_list {
+        value: 1
+      }
+    }
+    feature {
+      int64_list {
+        value: 1
+        value: 3
+        value: 5
+      }
+    }
+  }
+}
+}
+
+>> protofy(byte_dict={'A': [b'a', b'c', b'd', b'e', b'f'], 'B': [b'b']},
+           int_dict={'A': [1, 2, 3], 'B': [4, 5]},
+           float_dict={'C': [1.1, 2.1, 3.1], 'D': [4.1, 5.1]})
+
+feature {
+  key: "A"
+  value {
+    bytes_list {
+      value: "a"
+      value: "c"
+      value: "d"
+      value: "e"
+      value: "f"
+    }
+  }
+}
+feature {
+  key: "B"
+  value {
+    bytes_list {
+      value: "b"
+    }
+  }
+}
+feature {
+  key: "C"
+  value {
+    float_list {
+      value: 1.1
+      value: 2.1
+      value: 3.1
+    }
+  }
+}
+feature {
+  key: "D"
+  value {
+    float_list {
+      value: 4.1
+      value: 5.1
+    }
+  }
+}
+feature {
+  key: "E"
+  value {
+    int64_list {
+      value: 1
+      value: 2
+      value: 3
+    }
+  }
+}
+feature {
+  key: "F"
+  value {
+    int64_list {
+      value: 4
+      value: 5
+    }
+  }
+}
+}
+
 
 """
 import numpy as np
@@ -1190,7 +1275,7 @@ def protofy_sequence(context_dict, sequence_dict):
 if __name__ == '__main__':
     import cProfile
     cProfile.run('protofy(int_dict={\'testing_int\': [[1], [1, 3, 5]]})')
-    cProfile.run('test_CreateFeature()')
+    # cProfile.run('test_CreateFeature()')
 
 
 

@@ -1,6 +1,11 @@
 import tensorflow as tf
 
 
-def cast_to(tensor, dtype):
-    return tf.cast(tensor, dtype=dtype)
+def cast_to(image, dtype):
+    return tf.cast(image, dtype=dtype)
 
+
+def random_brightness(tensor):
+    return tf.image.random_brightness(tensor, )
+
+def random_contrast():
