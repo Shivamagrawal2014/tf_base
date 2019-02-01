@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dc2e976-380e-488e-98c6-a4b50a26cff3" name="Default" comment="Changes made to record">
-      <change afterPath="$PROJECT_DIR$/file/audio/parse_audio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph/import_graph.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph/restore_graph.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/file/image/model_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/file/image/ops_image.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/file/image/process_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/file/image/process_image.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/record/protofy.py" beforeDir="false" afterPath="$PROJECT_DIR$/file/record/protofy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/graph/tf_variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph/tf_variables.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/text/text_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/file/text/text_processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/restore_graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/graph/restore_model.py" afterDir="false" />
     </list>
     <ignored path="tf_base.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,24 +26,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file/record/protofy.py">
+        <entry file="file://$PROJECT_DIR$/file/open_file.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-18786">
-              <caret column="3" selection-start-column="3" selection-end-column="3" />
+            <state relative-caret-position="1215">
+              <caret line="81" selection-start-line="81" selection-end-line="81" />
               <folding>
-                <element signature="e#63#81#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file/image/record_image.py">
+        <entry file="file://$PROJECT_DIR$/file/image/ops_image.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="80" column="30" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="30" />
+            <state relative-caret-position="1313">
+              <caret line="562" column="117" selection-start-line="562" selection-start-column="117" selection-end-line="562" selection-end-column="117" />
               <folding>
-                <element signature="e#0#56#0" expanded="true" />
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/file/text/text_processor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="223" selection-start-line="223" selection-end-line="223" />
+            <state relative-caret-position="-5692">
+              <caret line="530" column="4" selection-start-line="530" selection-start-column="4" selection-end-line="530" selection-end-column="4" />
               <folding>
                 <element signature="e#0#53#0" expanded="true" />
               </folding>
@@ -62,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/graph/restore_graph.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/graph/restore_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="-2066">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
               <folding>
                 <element signature="e#0#42#0" expanded="true" />
               </folding>
@@ -75,31 +74,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file/image/test_open_image.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="26" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/graph/tf_variables.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="91" selection-start-line="91" selection-end-line="91" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/file/image/process_image.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="2520">
+              <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
             </state>
           </provider>
         </entry>
@@ -131,10 +109,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/file/image/parse_image.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
+            <state relative-caret-position="142">
               <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/file/image/record_image.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-387">
+              <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/file/image/model_image.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-129">
+              <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -187,7 +186,6 @@
         <option value="$PROJECT_DIR$/file/image/tf_image_record.py" />
         <option value="$PROJECT_DIR$/file/text.py" />
         <option value="$PROJECT_DIR$/record/tf_record_writer.py" />
-        <option value="$PROJECT_DIR$/file/text/text_processor.py" />
         <option value="$PROJECT_DIR$/file/image/tf_record_image.py" />
         <option value="$PROJECT_DIR$/file/image/test_open_image.py" />
         <option value="$PROJECT_DIR$/record/tf_record_reader.py" />
@@ -197,12 +195,15 @@
         <option value="$PROJECT_DIR$/file/image/record_image.py" />
         <option value="$PROJECT_DIR$/file/image/open_image.py" />
         <option value="$PROJECT_DIR$/file/image/parse_image.py" />
-        <option value="$PROJECT_DIR$/file/image/process_image.py" />
         <option value="$PROJECT_DIR$/file/record/protofy.py" />
         <option value="$PROJECT_DIR$/graph/tf_variables.py" />
         <option value="$PROJECT_DIR$/file/audio/parse_audio.py" />
         <option value="$PROJECT_DIR$/graph/import_graph.py" />
         <option value="$PROJECT_DIR$/graph/restore_graph.py" />
+        <option value="$PROJECT_DIR$/file/image/process_image.py" />
+        <option value="$PROJECT_DIR$/file/image/ops_image.py" />
+        <option value="$PROJECT_DIR$/file/text/text_processor.py" />
+        <option value="$PROJECT_DIR$/file/image/model_image.py" />
       </list>
     </option>
   </component>
@@ -228,6 +229,24 @@
               <item name="tf_base" type="b2602c69:ProjectViewProjectNode" />
               <item name="tf_base" type="462c0819:PsiDirectoryNode" />
               <item name="file" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tf_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tf_base" type="462c0819:PsiDirectoryNode" />
+              <item name="file" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tf_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tf_base" type="462c0819:PsiDirectoryNode" />
+              <item name="file" type="462c0819:PsiDirectoryNode" />
+              <item name="record" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tf_base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tf_base" type="462c0819:PsiDirectoryNode" />
+              <item name="file" type="462c0819:PsiDirectoryNode" />
+              <item name="text" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tf_base" type="b2602c69:ProjectViewProjectNode" />
@@ -272,7 +291,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.import_graph">
+  <component name="RunManager" selected="Python.text_processor">
     <configuration default="true" type="tests" factoryName="Attests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -313,27 +332,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="open_image (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="tf_base" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/file/image" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/file/image/open_image.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="protofy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="tf_base" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -347,6 +345,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/file/record/protofy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="text_processor" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="tf_base" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/file/text" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/file/text/text_processor.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -399,11 +418,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.text_processor" />
         <item itemvalue="Python.import_graph" />
         <item itemvalue="Python.tf_variables" />
         <item itemvalue="Python.protofy" />
         <item itemvalue="Python.tf_image_record" />
-        <item itemvalue="Python.open_image (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -635,7 +654,14 @@
       <option name="project" value="LOCAL" />
       <updated>1548600933452</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Changes made to record">
+      <created>1548873488727</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1548873488727</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TodoView">
@@ -656,7 +682,7 @@
       <window_info id="Favorites" order="2" sideWeight="0.5024155" side_tool="true" weight="0.24944155" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39087948" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.048859935" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.49185666" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -731,14 +757,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/anaconda3/envs/tf_api/lib/python3.6/site-packages/tensorflow/python/lib/io/tf_record.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file/text.py" />
     <entry file="file://$USER_HOME$/anaconda3/envs/tf_api/lib/python3.6/site-packages/tensorflow/python/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-950">
@@ -1004,16 +1022,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file/open_file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-668">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/graph/tf_graph_api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3870">
@@ -1024,32 +1032,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file/image/parse_image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/file/record/protofy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-18786">
           <caret column="3" selection-start-column="3" selection-end-column="3" />
           <folding>
             <element signature="e#63#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file/image/record_image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="80" column="30" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1071,19 +1059,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file/image/process_image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/graph/import_graph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="334" lean-forward="true" selection-start-line="334" selection-end-line="334" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/image/parse_image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="47" selection-end-line="26" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1098,22 +1089,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/file/open_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/image/process_image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/file/text/text_processor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="223" selection-start-line="223" selection-end-line="223" />
+        <state relative-caret-position="-5692">
+          <caret line="530" column="4" selection-start-line="530" selection-start-column="4" selection-end-line="530" selection-end-column="4" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/graph/restore_graph.py">
+    <entry file="file://$PROJECT_DIR$/file/image/ops_image.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="1313">
+          <caret line="562" column="117" selection-start-line="562" selection-start-column="117" selection-end-line="562" selection-end-column="117" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/image/record_image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-387">
+          <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/graph/restore_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2066">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
             <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/image/model_image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-129">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>

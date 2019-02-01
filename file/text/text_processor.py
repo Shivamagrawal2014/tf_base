@@ -793,8 +793,8 @@ def mc_words(word_lists):
 
 
 clean_up = WordList(parser=en_parser,
-                    remove_if_all=None,  #remove_if_all_words,
-                    remove_if_any=None)  #remove_if_any_words)
+                    remove_if_all=remove_if_all_words,
+                    remove_if_any=remove_if_any_words)
 
 
 def clean_word_list(json_path_or_dict_or_words_list,
