@@ -104,7 +104,7 @@ def distort_image(image):
 
 def encode_label_batch(label_batch):
     sess = tf.get_default_session()
-    print(classes)
+    # print(classes)
     class_mapping = tf.convert_to_tensor(classes)
     class_depth = class_mapping.shape[0]
     mapping_strings = class_mapping
@@ -151,18 +151,18 @@ class ConvolutionalBatchNormalizer(object):
 
         """Returns a batch-normalized version of x."""
         if train:
-          mean, variance = tf.nn.moments(x, [0, 1, 2])
-          assign_mean = self.mean.assign(mean)
-          assign_variance = self.variance.assign(variance)
-          with tf.control_dependencies([assign_mean, assign_variance]):
-            return tf.nn.batch_norm_with_global_normalization(
-                x, mean, variance, self.beta, self.gamma,
-                self.epsilon, self.scale_after_norm)
+             mean, variance = tf.nn.moments(x, [0, 1, 2])
+             assign_mean = self.mean.assign(mean)
+             assign_variance = self.variance.assign(variance)
+             with tf.control_dependencies([assign_mean, assign_variance]):
+                 return tf.nn.batch_norm_with_global_normalization(
+                     x, mean, variance, self.beta, self.gamma,
+                     self.epsilon, self.scale_after_norm)
         else:
-          mean = self.ewma_trainer.average(self.mean)
-          variance = self.ewma_trainer.average(self.variance)
-          local_beta = tf.identity(self.beta)
-          local_gamma = tf.identity(self.gamma)
-          return tf.nn.batch_norm_with_global_normalization(
-              x, mean, variance, local_beta, local_gamma,
-              self.epsilon, self.scale_after_norm)
+            mean = self.ewma_trainer.average(self.mean)
+            variance = self.ewma_trainer.average(self.variance)
+            local_beta = tf.identity(self.beta)
+            local_gamma = tf.identity(self.gamma)
+            return tf.nn.batch_norm_with_global_normalization(
+                x, mean, variance, local_beta, local_gamma,
+                self.epsilon, self.scale_after_norm)
