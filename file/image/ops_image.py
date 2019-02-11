@@ -555,7 +555,7 @@ FILTERS_SHAPE_LIST = [conv_1, conv_2, conv_3, conv_4, fully_conn, final_fc]
 if __name__ == '__main__':
     from network.image.image_base import ImageBase
     layer_stack = LayerStack()
-    layer_stack = layer_stack.image_classification(net_name='GH_Net', layer_name='Image',
+    layer_stack = layer_stack.image_classification(net_name='TestImage', layer_name='Image',
                                                    filters_list=FILTERS_SHAPE_LIST,
                                                    batch_norm_at_layer=2)
 

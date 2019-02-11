@@ -1,5 +1,6 @@
 import tensorflow as tf
 from graph.tf_graph_api import GraphAPI
+from six import add_metaclass
 
 
 def main():
@@ -7,7 +8,8 @@ def main():
     tf.reset_default_graph()
     graph_api = GraphAPI(reuse_variables=True, log=False)
 
-    class Api(metaclass=graph_api()):
+    @add_metaclass(graph_api())
+    class Api(object):
 
         def __init__(self):
             super(Api, self).__init__()
