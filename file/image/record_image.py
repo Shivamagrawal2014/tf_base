@@ -6,6 +6,7 @@ from graph.tf_graph_api import GraphAPI
 from tensorflow.python import debug as tf_debug
 from typing import List, Tuple
 import tensorflow as tf
+from six import add_metaclass
 
 
 Graph = GraphAPI()
@@ -33,7 +34,8 @@ class ImageTFRecordWriter(TFRecordWriterBase, OpenImage):
         return self._to_tfr(tfrecord_name, save_folder, allow_compression)
 
 
-class ImageTFRecordReader(TFRecordExampleReader, metaclass=Graph()):
+@add_metaclass(Graph())
+class ImageTFRecordReader(TFRecordExampleReader):
 
     def __init__(self):
         super(ImageTFRecordReader, self).__init__()
