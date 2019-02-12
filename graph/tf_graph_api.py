@@ -322,9 +322,3 @@ class GraphAPI(ContextClass):
             logger = self.logger() if any([self._log]) else self._log
             self.context = (graph_session, reuse, logger)
         return self.context
-
-
-
-
-
-

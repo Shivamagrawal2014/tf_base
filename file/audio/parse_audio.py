@@ -1,6 +1,7 @@
 from pydub import AudioSegment as _aud_seg
 from io import BytesIO
-import os
+from file import _file_extension
+
 
 __all__ = ['ParseAudio']
 
@@ -26,7 +27,7 @@ class ParseAudio(object):
             return file
 
     def __call__(self, file_name):
-        ext = os.path.splitext(file_name)[1][1:]
+        ext = _file_extension(file_name)
         if ext == 'wav':
             return self.wav(file_name)
         elif ext == 'mp3':

@@ -8,7 +8,7 @@ class OpenAudio(OpenFile):
 
     def __init__(self, folder: str, extensions: List[str]):
         super(OpenAudio, self).__init__(folder=folder, extensions=extensions)
-        self._parse_audio = ParseAudio()
+        self.__parse_audio = ParseAudio()
 
     @property
     def open_audio(self):
@@ -27,7 +27,7 @@ class OpenAudio(OpenFile):
         return self._extensions_to_files
 
     def _parse_audio(self, file_path):
-        audio_content = self._parse_audio(file_path)
+        audio_content = self.__parse_audio(file_path)
         if audio_content != file_path:
             pcm, frm_rate = audio_content
         else:
