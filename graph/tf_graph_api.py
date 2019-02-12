@@ -1,6 +1,7 @@
 import os
 import tensorflow as tf
 from graph.tf_sonnet import reuse_variables
+from functools import wraps
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
@@ -322,3 +323,12 @@ class GraphAPI(ContextClass):
             logger = self.logger() if any([self._log]) else self._log
             self.context = (graph_session, reuse, logger)
         return self.context
+
+
+def do_not_reuse_variables(cls_method):
+
+    @wraps(cls_method)
+    def result(*args, **kwargs):
+        return cls_method(*args, **kwargs)
+    result.do_not_reuse_variables = True
+    return result

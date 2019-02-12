@@ -553,21 +553,22 @@ final_fc = [1024, 10]
 FILTERS_SHAPE_LIST = [conv_1, conv_2, conv_3, conv_4, fully_conn, final_fc]
 
 if __name__ == '__main__':
-    from network.image.image_base import ImageBase
+    from file.image.record_image import ImageTFRecordReader as ImageReader
     layer_stack = LayerStack()
     layer_stack = layer_stack.image_classification(net_name='TestImage', layer_name='Image',
                                                    filters_list=FILTERS_SHAPE_LIST,
                                                    batch_norm_at_layer=2)
 
-    image_base = ImageBase()
-    reader = image_base.read(tf_record=r'C:\Users\shivam.agarwal\PycharmProjects\TopicAPI\data\image\image_record.tfr',
-                             batch_size=5, epochs_size=20)
+    image_reader = ImageReader()
+    reader = image_reader.batch(tf_path=r'C:\Users\shivam.agarwal\PycharmProjects\TopicAPI\data\image\image_record.tfr',
+                                batch_size=5,
+                                epochs_size=20)
     data = reader.make_one_shot_iterator()
     # init = data.initializer
-    sess = image_base.session()
+    sess = image_reader.session
     # sess.run(init)
     data = data.get_next()
-    summarizer = image_base.summary_writer('../summary')
+    summarizer = image_reader.summary_writer('../summary')
     _, i = data[0]['image_pixel']
     print(i.shape)
     for layer in layer_stack:
