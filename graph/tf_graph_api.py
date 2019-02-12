@@ -328,7 +328,7 @@ class GraphAPI(ContextClass):
 def do_not_reuse_variables(cls_method):
 
     @wraps(cls_method)
-    def result(*args, **kwargs):
+    def result(self, *args, **kwargs):
         return cls_method(*args, **kwargs)
     result.do_not_reuse_variables = True
     return result
