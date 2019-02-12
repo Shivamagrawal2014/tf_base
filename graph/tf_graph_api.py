@@ -329,6 +329,6 @@ def do_not_reuse_variables(cls_method):
 
     @wraps(cls_method)
     def result(self, *args, **kwargs):
-        return cls_method(*args, **kwargs)
+        return cls_method(self, *args, **kwargs)
     result.do_not_reuse_variables = True
     return result

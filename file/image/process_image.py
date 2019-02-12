@@ -102,9 +102,8 @@ def distort_image(image):
     return (only_reshaped_image,), reshaped_then_recolored_image
 
 
-def encode_label_batch(label_batch):
+def encode_label_batch(label_batch, classes):
     sess = tf.get_default_session()
-    # print(classes)
     class_mapping = tf.convert_to_tensor(classes)
     class_depth = class_mapping.shape[0]
     mapping_strings = class_mapping

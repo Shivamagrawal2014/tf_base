@@ -3,7 +3,7 @@ from file.record.reader import TFRecordExampleReader
 from file.image.open_image import OpenImage
 from file.record.protofy import protofy
 from graph.tf_graph_api import GraphAPI
-from tensorflow.python import debug as tf_debug
+from file.image.process_image import distort_image, encode_label_batch
 from typing import List, Tuple
 import tensorflow as tf
 from six import add_metaclass
@@ -53,9 +53,13 @@ class ImageTFRecordReader(TFRecordExampleReader):
         pixel = tf.cast(pixel, dtype=tf.uint8, name='cast_pixel_to_uint8')
 
         shape = tf.cast(example['shape'], dtype=tf.int32, name='shape_cast')
+        pixel = tf.reshape(pixel, shape)
+        print('pixel.shape : {pixel_shape}'.format(pixel_shape=pixel.shape))
+        return distort_image(pixel), shape
 
-        # pixel = tf.reshape(pixel, shape)
-        return pixel, shape
+    def summary_writer(self, summary_dir, graph=None):
+        graph = graph or self.graph
+        return self._summary_writer(summary_dir, graph)
 
     def batch(self,
               tf_path,
@@ -74,9 +78,9 @@ def test_write():
 
 
 if __name__ == '__main__':
-    record = test_write()
+    record = r'/home/shivam/Documents/ubuntu_images_2.tfr'  # test_write()
     reader = ImageTFRecordReader()
-    data = reader.batch(tf_path=record)
+    data = reader.batch(tf_path=record, batch_size=2, epochs_size=1)
     data = data.make_one_shot_iterator()
     # init = data.initializer
     sess = reader.session

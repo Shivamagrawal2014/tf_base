@@ -555,12 +555,12 @@ FILTERS_SHAPE_LIST = [conv_1, conv_2, conv_3, conv_4, fully_conn, final_fc]
 if __name__ == '__main__':
     from file.image.record_image import ImageTFRecordReader as ImageReader
     layer_stack = LayerStack()
-    layer_stack = layer_stack.image_classification(net_name='TestImage', layer_name='Image',
+    layer_stack = layer_stack.image_classification(layer_name='Image',
                                                    filters_list=FILTERS_SHAPE_LIST,
                                                    batch_norm_at_layer=2)
 
     image_reader = ImageReader()
-    reader = image_reader.batch(tf_path=r'C:\Users\shivam.agarwal\PycharmProjects\TopicAPI\data\image\image_record.tfr',
+    reader = image_reader.batch(tf_path=r'/home/shivam/Documents/ubuntu_images_2.tfr',
                                 batch_size=5,
                                 epochs_size=20)
     data = reader.make_one_shot_iterator()
@@ -569,21 +569,21 @@ if __name__ == '__main__':
     # sess.run(init)
     data = data.get_next()
     summarizer = image_reader.summary_writer('../summary')
-    _, i = data[0]['image_pixel']
-    print(i.shape)
+    image, shape = data
+    print(image.shape)
     for layer in layer_stack:
-        i = layer(i)
-        print(i)
+        image = layer(image)
+        print(image)
     glob_init_op = tf.global_variables_initializer()
     loc_init_op = tf.local_variables_initializer()
 
     sess.run(loc_init_op)
     sess.run(glob_init_op)
-    print(i.shape)
+    print(image.shape)
     with summarizer:
         try:
             for _ in range(10):
-                i_ = sess.run(i)
+                i_ = sess.run(image)
                 print(i_.shape)
             print('Completed!')
         except tf.errors.OutOfRangeError:
