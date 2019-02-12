@@ -38,3 +38,4 @@ class OpenAudio(OpenFile):
 
 
 if __name__ == '__main__':
+    pass
