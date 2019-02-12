@@ -27,7 +27,9 @@ class OpenAudio(OpenFile):
         return self._extensions_to_files
 
     def _parse_audio(self, file_path):
-        image, shape = self._parse_audio(file_path)
-        return self._protofy_image(image, shape)
+        audio_content = self._parse_audio(file_path)
+        if audio_content != file_path
+            pcm,
+        return self._protofy_audio(pcm, shape)
 
     def _protofy_audio(self, pcm, ):

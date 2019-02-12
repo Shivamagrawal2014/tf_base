@@ -31,4 +31,6 @@ class ParseAudio(object):
             return self.wav(file_name)
         elif ext == 'mp3':
             return self.mp3(file_name)
+        else:
+            return file_name
 
