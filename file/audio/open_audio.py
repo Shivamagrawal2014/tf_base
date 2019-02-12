@@ -28,8 +28,14 @@ class OpenAudio(OpenFile):
 
     def _parse_audio(self, file_path):
         audio_content = self._parse_audio(file_path)
-        if audio_content != file_path
-            pcm,
-        return self._protofy_audio(pcm, shape)
+        if audio_content != file_path:
+            pcm, frm_rate = audio_content
+        else:
+            pcm, frm_rate = [[0]], 0
+        return self._protofy_audio(pcm, frm_rate)
 
-    def _protofy_audio(self, pcm, ):
+    def _protofy_audio(self, pcm, frame_rate):
+        return  NotImplemented
+
+
+if __name__ == '__main__':
