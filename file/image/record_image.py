@@ -3,11 +3,10 @@ from file.record.reader import TFRecordExampleReader
 from file.image.open_image import OpenImage
 from file.record.protofy import protofy
 from graph.tf_graph_api import GraphAPI
-from file.image.process_image import distort_image, encode_label_batch
 from typing import List, Tuple
 import tensorflow as tf
 from six import add_metaclass
-
+import os
 
 Graph = GraphAPI()
 
@@ -24,10 +23,10 @@ class ImageTFRecordWriter(TFRecordWriterBase, OpenImage):
     def _features(self):
         return self.open_image
 
-    def _protofy_image(self, image, shape):
+    def _protofy_image(self, image, shape, file_path):
         if hasattr(image, 'tostring'):
             image = image.tostring()
-
+        label = os.path.splitext(file_path)[0]
         return protofy(byte_dict={'pixel': image}, int_dict={'shape': list(shape)})
 
     def to_tfr(self, tfrecord_name, save_folder, allow_compression=None):
@@ -54,8 +53,7 @@ class ImageTFRecordReader(TFRecordExampleReader):
 
         shape = tf.cast(example['shape'], dtype=tf.int32, name='shape_cast')
         pixel = tf.reshape(pixel, shape)
-        print('pixel.shape : {pixel_shape}'.format(pixel_shape=pixel.shape))
-        return distort_image(pixel), shape
+        return pixel
 
     def summary_writer(self, summary_dir, graph=None):
         graph = graph or self.graph
@@ -87,10 +85,11 @@ if __name__ == '__main__':
     # sess = tf_debug.LocalCLIDebugWrapperSession(sess)
     # sess.run(init)
     data = data.get_next()
-    summarizer = reader._summary_writer('../summary', sess.graph)
+    summarizer = reader.summary_writer('../summary', sess.graph)
     try:
         for _ in range(21):
-            print((sess.run(data)))
+            image, shape = sess.run(data)
+            print(image.shape, shape)
         print('Completed!')
     except tf.errors.OutOfRangeError:
         print('Data Exhausted!')

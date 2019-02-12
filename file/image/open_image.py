@@ -29,9 +29,9 @@ class OpenImage(OpenFile):
 
     def _parse_image(self, file_path):
         image, shape = self.__parse_image(file_path)
-        return self._protofy_image(image, shape)
+        return self._protofy_image(image, shape, file_path)
 
-    def _protofy_image(self, image, shape):
+    def _protofy_image(self, image, shape, file_path):
         return NotImplemented
 
 
