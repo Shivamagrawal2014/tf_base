@@ -76,7 +76,7 @@ ipython==6.5.0
 ipython-genutils==0.2.0
 ipywidgets==7.4.1
 isort==4.3.4
-itsdangerous==0.24
+itsdangerous==1.1.0
 jdcal==1.4
 jedi==0.12.1
 jeepney==0.3.1
