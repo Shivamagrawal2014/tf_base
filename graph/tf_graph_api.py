@@ -234,6 +234,9 @@ def make_context_meta_class(decorators, graph=None, session=None):
                 if names not in ['graph', 'session', 'tf', '__qualname__', '__classcell__'] or \
                         not (names.startswith(('__', '_')) or names.endswith(('__', '_'))):
                     for decorator in _decorators[::-1]:
+                        if hasattr(namespace[names], 'do_not_reuse_variables') \
+                                and namespace[names].do_not_reuse_variables:
+                            continue
                         if not isinstance(names, property):
                             namespace[names] = decorator(namespace[names])
                         else:
