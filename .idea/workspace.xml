@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4dc2e976-380e-488e-98c6-a4b50a26cff3" name="Default" comment="edited travis yml">
+    <list default="true" id="4dc2e976-380e-488e-98c6-a4b50a26cff3" name="Default" comment="edited requirements.txt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
@@ -90,8 +90,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+            <state relative-caret-position="120">
+              <caret line="120" column="13" lean-forward="true" selection-start-line="120" selection-start-column="13" selection-end-line="120" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -395,20 +395,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543727097394</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Changes made to record">
-      <created>1548263077591</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1548263077591</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Changes made to record">
-      <created>1548269961242</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1548269961242</updated>
     </task>
     <task id="LOCAL-00014" summary="Changes made to record">
       <created>1548438689934</created>
@@ -739,7 +725,21 @@
       <option name="project" value="LOCAL" />
       <updated>1550305397811</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="edited travis yml">
+      <created>1550305523297</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1550305523297</updated>
+    </task>
+    <task id="LOCAL-00062" summary="edited requirements.txt">
+      <created>1550305693535</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1550305693535</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TodoView">
@@ -811,7 +811,8 @@
     <MESSAGE value="added requirements.txt" />
     <MESSAGE value="added travis yml" />
     <MESSAGE value="edited travis yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited travis yml" />
+    <MESSAGE value="edited requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="edited requirements.txt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1242,8 +1243,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        <state relative-caret-position="120">
+          <caret line="120" column="13" lean-forward="true" selection-start-line="120" selection-start-column="13" selection-end-line="120" selection-end-column="13" />
         </state>
       </provider>
     </entry>
