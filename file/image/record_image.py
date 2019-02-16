@@ -41,6 +41,7 @@ class ImageTFRecordReader(TFRecordExampleReader):
 
     def feature_map(self):
         return {'pixel': tf.FixedLenFeature([], dtype=tf.string),
+                'label': tf.FixedLenFeature([], dtype=tf.string),
                 'shape': tf.FixedLenFeature([3], dtype=tf.int64)}
 
     def feature_parser(self, parsed_single_example):
@@ -50,7 +51,6 @@ class ImageTFRecordReader(TFRecordExampleReader):
             example['pixel'], out_type=tf.uint8, name='decode_raw_pixel')
 
         pixel = tf.cast(pixel, dtype=tf.uint8, name='cast_pixel_to_uint8')
-
         shape = tf.cast(example['shape'], dtype=tf.int32, name='shape_cast')
         pixel = tf.reshape(pixel, shape)
         return pixel
