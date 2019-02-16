@@ -89,8 +89,8 @@ if __name__ == '__main__':
     summarizer = reader.summary_writer('../summary', sess.graph)
     try:
         for _ in range(21):
-            image, shape = sess.run(data)
-            print(image.shape, shape)
+            image, label = sess.run(data)
+            print(image.shape, label)
         print('Completed!')
     except tf.errors.OutOfRangeError:
         print('Data Exhausted!')
