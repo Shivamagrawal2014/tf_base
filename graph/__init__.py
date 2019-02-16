@@ -1,1 +1,1 @@
-from graph.tf_graph_api import GraphAPI
+from graph.tf_graph_api import GraphAPI, do_not_reuse_variables
