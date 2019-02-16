@@ -26,7 +26,7 @@ class ImageTFRecordWriter(TFRecordWriterBase, OpenImage):
     def _protofy_image(self, image, shape, file_path):
         if hasattr(image, 'tostring'):
             image = image.tostring()
-        label = os.path.basename(os.path.splitext(file_path)[0].encode('utf-8'))
+        label = os.path.basename(os.path.dirname(os.path.splitext(file_path)[0].encode('utf-8')))
         return protofy(byte_dict={'pixel': image, 'label': label}, int_dict={'shape': list(shape)})
 
     def to_tfr(self, tfrecord_name, save_folder, allow_compression=None):
@@ -77,7 +77,7 @@ def test_write(tf_record_name: str = 'ubuntu_images_2'):
 
 
 if __name__ == '__main__':
-    record = test_write('trial')
+    record = test_write('trial-1')
     reader = ImageTFRecordReader()
     data = reader.batch(tf_path=record, batch_size=2, epochs_size=1)
     data = data.make_one_shot_iterator()
