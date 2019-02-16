@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4dc2e976-380e-488e-98c6-a4b50a26cff3" name="Default" comment="edited the tf_graph_api and added the do_not_resue_variables option">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4dc2e976-380e-488e-98c6-a4b50a26cff3" name="Default" comment="added label to the protofy function in image writer">
       <change beforePath="$PROJECT_DIR$/file/image/record_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/file/image/record_image.py" afterDir="false" />
     </list>
     <ignored path="tf_base.iws" />
@@ -105,8 +104,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/file/image/record_image.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="170">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -417,13 +416,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543727097394</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Changes made to Open File">
-      <created>1548141904265</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1548141904266</updated>
     </task>
     <task id="LOCAL-00003" summary="Changes made to Open Image">
       <created>1548146524576</created>
@@ -761,7 +753,14 @@
       <option name="project" value="LOCAL" />
       <updated>1550298296129</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="added label to the protofy function in image writer">
+      <created>1550299131299</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1550299131299</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TodoView">
@@ -827,7 +826,8 @@
     <MESSAGE value="Changes made to utils" />
     <MESSAGE value="Changes made to record" />
     <MESSAGE value="edited the tf_graph_api and added the do_not_resue_variables option" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited the tf_graph_api and added the do_not_resue_variables option" />
+    <MESSAGE value="added label to the protofy function in image writer" />
+    <option name="LAST_COMMIT_MESSAGE" value="added label to the protofy function in image writer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1251,8 +1251,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/file/image/record_image.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="170">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
