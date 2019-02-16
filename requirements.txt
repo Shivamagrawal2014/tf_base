@@ -102,7 +102,7 @@ mccabe==0.6.1
 mistune==0.8.3
 #mkl-fft==1.0.6
 #mkl-random==1.0.1
-more-itertools==4.3.0
+more-itertools==6.0.0
 mpmath==1.0.0
 msgpack==0.5.6
 multipledispatch==0.6.0
