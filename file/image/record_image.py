@@ -27,7 +27,7 @@ class ImageTFRecordWriter(TFRecordWriterBase, OpenImage):
         if hasattr(image, 'tostring'):
             image = image.tostring()
         label = os.path.splitext(file_path)[0]
-        return protofy(byte_dict={'pixel': image}, int_dict={'shape': list(shape)})
+        return protofy(byte_dict={'pixel': image, 'label': label}, int_dict={'shape': list(shape)})
 
     def to_tfr(self, tfrecord_name, save_folder, allow_compression=None):
         return self._to_tfr(tfrecord_name, save_folder, allow_compression)
