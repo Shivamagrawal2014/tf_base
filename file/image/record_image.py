@@ -53,7 +53,8 @@ class ImageTFRecordReader(TFRecordExampleReader):
         pixel = tf.cast(pixel, dtype=tf.uint8, name='cast_pixel_to_uint8')
         shape = tf.cast(example['shape'], dtype=tf.int32, name='shape_cast')
         pixel = tf.reshape(pixel, shape)
-        return pixel
+        label = example['label']
+        return pixel, label
 
     def summary_writer(self, summary_dir, graph=None):
         graph = graph or self.graph
