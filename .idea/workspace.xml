@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4dc2e976-380e-488e-98c6-a4b50a26cff3" name="Default" comment="edited requirements.txt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/image/record_image.py" beforeDir="false" afterPath="$PROJECT_DIR$/file/image/record_image.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
     </list>
     <ignored path="tf_base.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,14 +74,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/file/image/record_image.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+            <state relative-caret-position="1395">
+              <caret line="93" column="27" lean-forward="true" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -165,9 +174,9 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/graph/__init__.py" />
         <option value="$PROJECT_DIR$/graph/tf_graph_api.py" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/file/image/record_image.py" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -374,20 +383,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543727097394</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Changes made to record">
-      <created>1549909226333</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1549909226333</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Changes made to record">
-      <created>1549909959199</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1549909959199</updated>
     </task>
     <task id="LOCAL-00038" summary="Changes made to record">
       <created>1549946405963</created>
@@ -718,7 +713,21 @@
       <option name="project" value="LOCAL" />
       <updated>1550317407056</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="edited requirements.txt">
+      <created>1550317739825</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1550317739825</updated>
+    </task>
+    <task id="LOCAL-00086" summary="edited requirements.txt">
+      <created>1550317992101</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1550317992101</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TodoView">
@@ -739,14 +748,14 @@
       <window_info id="Favorites" order="2" sideWeight="0.5024155" side_tool="true" weight="0.24944155" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6286645" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.11400651" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.49185666" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32899022" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.43811074" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4988831" visible="true" weight="0.060260586" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4988831" weight="0.060260586" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50111693" side_tool="true" weight="0.47068405" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -1186,13 +1195,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/graph/tf_graph_api.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-570">
@@ -1215,11 +1217,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/file/image/record_image.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="1395">
+          <caret line="93" column="27" lean-forward="true" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
         </state>
       </provider>
     </entry>
