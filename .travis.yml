@@ -4,6 +4,14 @@ python:
   - "3.6.7"
 # command to install dependencies
 install:
+  - pip install -U pip
+  - pip install coverage
   - pip install -r requirements.txt
 
+
 script: echo "okay"
+
+after_success:
+ - coverage report
+ - pip install coveralls
+ - coveralls
