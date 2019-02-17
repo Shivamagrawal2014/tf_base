@@ -7,6 +7,12 @@ tf_base
 
 [Source Code](http://github.com/shivamagrawal2014/tf_base/)
 
+## Requirements
+- [Tensorflow](http://www.tensorflow.org)
+
+## Basic Usage
+To make creating Image Datasets and Graph a bit easier.
+
 Library under development. Contains rough edges/unfinished functonality. API subject to changes.
 
 ### Dictionary to Featues 
