@@ -14,27 +14,27 @@ Library under development. Contains rough edges/unfinished functonality. API sub
 ```python 
   from tf_base.file.record.protofy import protofy
   
-  features = protofy(int_dict={'testing_int': [[1], [1, 3, 5]]}))
-  print(features)
-  # returns
+  >>features = protofy(int_dict={'testing_int': [[1], [1, 3, 5]]}))
+  >>print(features)
+    # returns
   feature_list {
-    key: "testing_int"
-    value {
-      feature {
-        int64_list {
-          value: 1
+      key: "testing_int"
+      value {
+        feature {
+          int64_list {
+            value: 1
+          }
         }
-      }
-      feature {
-        int64_list {
-          value: 1
-          value: 3
-          value: 5
+        feature {
+          int64_list {
+            value: 1
+            value: 3
+            value: 5
+          }
         }
       }
     }
-  }
-  }
+    }
 ```
 Also Graph functionality acts as base graph 
 ```python 
