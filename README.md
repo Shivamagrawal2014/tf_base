@@ -11,7 +11,7 @@ tf_base
 - [Tensorflow](http://www.tensorflow.org)
 
 ## Basic Usage
-To make creating Image Datasets and Graph a bit easier.
+To make creation of Datasets and Graph a bit easier.
 
 Library under development. Contains rough edges/unfinished functonality. API subject to changes.
 
