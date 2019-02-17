@@ -59,6 +59,8 @@ Library under development. Contains rough edges/unfinished functonality. API sub
  
  > This API is based on tf.dataset API so it can simply read the TFrecord  
  ```python 
+    from tf_base.file.image import ImageTFRecord
+    
     reader = ImageTFRecordReader()
     tf_record_path = '/path/to/image_folder'
     data = reader.batch(tf_record_path=tf_record_path, batch_size=2, epochs_size=1)
