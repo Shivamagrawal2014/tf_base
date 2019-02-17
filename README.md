@@ -69,7 +69,9 @@ So there is no explicit need to call
 ```python 
 
 with.variabl_scope('Concolution'+'/'+'W')
-    one = tf.Variable(initial_value=tf.truncated_normal_initializer(mean=0.0, stddev=1.0), name='weight'))
+    one = tf.Variable(initial_value=
+                      tf.truncated_normal_initializer(mean=0.0, stddev=1.0), 
+                      name='weight'))
 ```
 to name the variable as **Convolution/W/weight:0**
 
@@ -77,4 +79,6 @@ just
 ```python 
   convolution = Convolution()
   weight = convolution.W(tf.truncated_normal_initializer(mean=0.0, stddev=1.0))
+  
+  will do the task
   
