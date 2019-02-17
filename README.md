@@ -12,62 +12,23 @@ Library under development. Contains rough edges/unfinished functonality. API sub
 This library has support for making features from a single call. 
 ```python 
   from tf_base.file.record.protofy import protofy
-  features = protofy(byte_dict={'A': [b'a', b'b'], 'B': [b'c']},
-                     int_dict={'A': [1, 2, 3], 'B': [4, 5]},
-                     float_dict={'C': [1.1, 2.1, 3.1], 'D': [4.1, 5.1]})
-  # it returns 
-  feature {
-  key: "A"
+  features = protofy(int_dict={'testing_int': [[1], [1, 3, 5]]}))
+  print(features)
+  # returns
+feature_list {
+  key: "testing_int"
   value {
-    bytes_list {
-      value: "a"
-      value: "b"
+    feature {
+      int64_list {
+        value: 1
+      }
     }
-  }
-}
-feature {
-  key: "B"
-  value {
-    bytes_list {
-      value: "c"
-    }
-  }
-}
-feature {
-  key: "C"
-  value {
-    float_list {
-      value: 1.1
-      value: 2.1
-      value: 3.1
-    }
-  }
-}
-feature {
-  key: "D"
-  value {
-    float_list {
-      value: 4.1
-      value: 5.1
-    }
-  }
-}
-feature {
-  key: "E"
-  value {
-    int64_list {
-      value: 1
-      value: 2
-      value: 3
-    }
-  }
-}
-feature {
-  key: "F"
-  value {
-    int64_list {
-      value: 4
-      value: 5
+    feature {
+      int64_list {
+        value: 1
+        value: 3
+        value: 5
+      }
     }
   }
 }
