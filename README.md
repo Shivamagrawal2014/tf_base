@@ -37,8 +37,8 @@ Library under development. Contains rough edges/unfinished functonality. API sub
     }
 ```
 ### Image Folder to TFRecord
-  > With a single call tfrecord file for the images can be created, image folders will be taken as labels. Compression
-  formats can be specified as boolen or types. 
+  > With simple call tfrecord file for the images can be created, image folders will be taken as labels. Compression
+  formats can be specified as boolen or types. Resizing of images also supported with **size** parameter.
   
   ```python 
     from tf_base.file.image import ImageTFRecordWriter
