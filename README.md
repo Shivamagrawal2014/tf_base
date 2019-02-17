@@ -74,6 +74,7 @@ Library under development. Contains rough edges/unfinished functonality. API sub
 
 
 ### Adding with tf.Graph functionality with GraphAPI to class
+> With GraphAPI classes and functions act as variable_scope to the graph. based on **tf.sonnet** backend 
 ```python 
     from tf_base.graph import GraphAPI
     graph_api = GraphAPI(reuse_variables=True, log=False)
@@ -110,5 +111,5 @@ Library under development. Contains rough edges/unfinished functonality. API sub
                         name='weight'))
 
 ```
-Now all classes and functions act as variable_scope to the graph.
+
 
