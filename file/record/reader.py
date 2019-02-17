@@ -4,7 +4,7 @@ import tensorflow as tf
 class TFRecordReaderBase(object):
 
     def __init__(self, is_sequence_example):
-        self._tf_path = None
+        self._tf_record_path = None
         self._is_sequential_data = is_sequence_example
 
         # feature mappings data
@@ -81,22 +81,22 @@ class TFRecordReaderBase(object):
             else:
                 return
 
-    def _data_set_serialized_output(self, tf_path, tf_record_compression: bool = True):
+    def _data_set_serialized_output(self, tf_record_path, tf_record_compression: bool = True):
         """
-        :param tf_path:
+        :param tf_record_path:
         :param tf_record_compression:
         :return:
         """
-        if self._tf_path is None:
-            if isinstance(tf_path, str):
-                self._tf_path = [tf_path]
+        if self._tf_record_path is None:
+            if isinstance(tf_record_path, str):
+                self._tf_record_path = [tf_record_path]
             else:
-                self._tf_path = tf_path
+                self._tf_record_path = tf_record_path
 
-        print('file_name path : ', self._tf_path)
+        print('file_name path : ', self._tf_record_path)
         options = self._compression_options(tf_record_compression=tf_record_compression)
         serialized_output = tf.contrib.data.TFRecordDataset(
-            filenames=self._tf_path, compression_type=options)
+            filenames=self._tf_record_path, compression_type=options)
         # self.tf.add_to_collection()
         print('Serialized Output :', type(serialized_output).__name__+'.')
         return serialized_output
@@ -164,13 +164,15 @@ class TFRecordReaderBase(object):
         return self._apply_func(self._single_sequence_example(serialized_output))
 
     def _map_shuffle_batch_repeat(self,
-                                  tf_path,
+                                  tf_record_path,
                                   apply_func,
                                   buffer_size,
                                   batch_size,
-                                  epochs_size
+                                  epochs_size,
+                                  tf_record_compression
                                   ):
-        data_set = self._data_set_serialized_output(tf_path=tf_path)
+        data_set = self._data_set_serialized_output(
+            tf_record_path=tf_record_path, tf_record_compression=tf_record_compression)
         data_set = data_set.map(apply_func)
         data_set = data_set.shuffle(buffer_size=buffer_size)
         data_set = data_set.batch(batch_size=batch_size)
@@ -178,47 +180,54 @@ class TFRecordReaderBase(object):
         return data_set
 
     def _batch_sequence_example(self,
-                                tf_path,
+                                tf_record_path,
                                 buffer_size,
                                 batch_size,
-                                epochs_size
+                                epochs_size,
+                                tf_record_compression
                                 ):
-        return self._map_shuffle_batch_repeat(tf_path=tf_path,
+        return self._map_shuffle_batch_repeat(tf_record_path=tf_record_path,
                                               apply_func=self._mini_batch_sequence_example,
                                               buffer_size=buffer_size,
                                               batch_size=batch_size,
-                                              epochs_size=epochs_size)
+                                              epochs_size=epochs_size,
+                                              tf_record_compression=tf_record_compression)
 
     def _batch_example(self,
-                       tf_path,
+                       tf_record_path,
                        buffer_size,
                        batch_size,
-                       epochs_size
+                       epochs_size,
+                       tf_record_compression
                        ):
-        return self._map_shuffle_batch_repeat(tf_path=tf_path,
+        return self._map_shuffle_batch_repeat(tf_record_path=tf_record_path,
                                               apply_func=self._mini_batch_example,
                                               buffer_size=buffer_size,
                                               batch_size=batch_size,
-                                              epochs_size=epochs_size)
+                                              epochs_size=epochs_size,
+                                              tf_record_compression=tf_record_compression)
 
     def _get_batch(self,
-                   tf_path,
+                   tf_record_path,
                    buffer_size=10000,
                    batch_size=15,
-                   epochs_size=2000):
+                   epochs_size=2000,
+                   tf_record_compression=True):
         buffer_size = buffer_size or 10000
         batch_size = batch_size or 15
         epochs_size = epochs_size or 2000
         if self._is_sequential_data:
-            data = self._batch_sequence_example(tf_path=tf_path,
+            data = self._batch_sequence_example(tf_record_path=tf_record_path,
                                                 buffer_size=buffer_size,
                                                 batch_size=batch_size,
-                                                epochs_size=epochs_size)
+                                                epochs_size=epochs_size,
+                                                tf_record_compression=tf_record_compression)
         else:
-            data = self._batch_example(tf_path=tf_path,
+            data = self._batch_example(tf_record_path=tf_record_path,
                                        buffer_size=buffer_size,
                                        batch_size=batch_size,
-                                       epochs_size=epochs_size)
+                                       epochs_size=epochs_size,
+                                       tf_record_compression=tf_record_compression)
         return data
 
     @staticmethod
@@ -261,7 +270,7 @@ if __name__ == '__main__':
     feat_map = FeatureMap()
     reader._example_map = feat_map._image_map
     reader._feature_parser = feat_map._image_feature_parser
-    data = reader._get_batch(tf_path=tf_record_path,
+    data = reader._get_batch(tf_record_path=tf_record_path,
                              batch_size=4,
                              epochs_size=20)
 

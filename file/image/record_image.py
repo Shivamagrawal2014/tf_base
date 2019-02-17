@@ -64,8 +64,13 @@ class ImageTFRecordReader(TFRecordExampleReader):
               tf_path,
               buffer_size=10000,
               batch_size=15,
-              epochs_size=2000):
-        return self._get_batch(tf_path, buffer_size, batch_size, epochs_size)
+              epochs_size=2000,
+              tf_record_compression=True):
+        return self._get_batch(tf_path,
+                               buffer_size,
+                               batch_size,
+                               epochs_size,
+                               tf_record_compression)
 
 
 def test_write(tf_record_name: str = 'ubuntu_images_2'):
