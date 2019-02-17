@@ -36,6 +36,21 @@ Library under development. Contains rough edges/unfinished functonality. API sub
     }
     }
 ```
+### Image Folder to TFRecord
+  > With a single call tfrecord file for the images can be created, image folders will be taken as labels. Compression
+  formats can be specified as boolen or types. 
+  
+  ```python 
+    from tf_base.file.image import ImageTFRecordWriter
+    
+    images = ImageTFRecordWriter('/home/shivam/Documents/', ['jpg'],
+                                 size=(20, 20, 0), show=False)
+    record = images.to_tfr(tfrecord_name='images',
+                           save_folder='/home/shivam/Documents/', allow_compression=True)
+  
+  ```
+
+
 Also Graph functionality acts as base graph 
 ```python 
     from tf_base.graph import GraphAPI
@@ -65,6 +80,8 @@ Also Graph functionality acts as base graph
             
             
 ```
+
+
 Now all classes and functions act as variable_scope to the graph.
 So there is no explicit need to call
 ```python 
