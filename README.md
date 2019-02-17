@@ -10,7 +10,7 @@ Tensorflow coding, simplified.
 Library under development. Contains rough edges/unfinished functonality. API subject to changes.
 
 ### Dictionary to Featues 
-  >This library has support for making features from a single call. 
+  >This library has support for making features with a single call. 
 ```python 
   from tf_base.file.record.protofy import protofy
   
@@ -36,7 +36,7 @@ Library under development. Contains rough edges/unfinished functonality. API sub
     }
     }
 ```
-### Image Folder to TFRecord
+### Writing Images from Folder to TFRecord
   > With simple call tfrecord file for the images can be created, image folders will be taken as labels. Compression
   formats can be specified as boolen or types. Resizing of images also supported with **size** parameter.
   
@@ -49,9 +49,31 @@ Library under development. Contains rough edges/unfinished functonality. API sub
                            save_folder='/home/shivam/Documents/', allow_compression=True)
   
   ```
+ ### Reading Images from TFRecord
+ 
+ > This API is based on tf.dataset API so it can simply read the TFrecord  
+ ```python 
+    reader = ImageTFRecordReader()
+    tf_record_path = '/path/to/image_folder'
+    data = reader.batch(tf_record_path=tf_record_path, batch_size=2, epochs_size=1)
+    data = data.make_one_shot_iterator()
+    sess = reader.session
+    data = data.get_next()
+    summarizer = reader.summary_writer('../summary', sess.graph)
+    try:
+        for _ in range(21):
+            image, label = sess.run(data)
+            print(image.shape, label)
+        print('Completed!')
+    except tf.errors.OutOfRangeError:
+        print('Data Exhausted!')
+    finally:
+        summarizer.close()
+ 
+ ```
 
 
-Also Graph functionality acts as base graph 
+### Adding with tf.Graph functionality with GraphAPI to class
 ```python 
     from tf_base.graph import GraphAPI
     graph_api = GraphAPI(reuse_variables=True, log=False)
@@ -78,25 +100,15 @@ Also Graph functionality acts as base graph
         def B(self, value, name='bias'):
             return tf.Variable(initial_value=value, name=name)
             
-            
-```
-
-
-Now all classes and functions act as variable_scope to the graph.
-So there is no explicit need to call
-```python 
-
-with.variabl_scope('Concolution'+'/'+'W')
+    convolution = Convolution()
+    weight = convolution.W(tf.truncated_normal_initializer(mean=0.0, stddev=1.0))
+    
+    # is same as 
+    with.variabl_scope('Convolution'+'/'+'W')
     one = tf.Variable(initial_value=
                       tf.truncated_normal_initializer(mean=0.0, stddev=1.0), 
                       name='weight'))
+            
 ```
-to name the variable as **Convolution/W/weight:0**
+Now all classes and functions act as variable_scope to the graph.
 
-just 
-```python 
-  convolution = Convolution()
-  weight = convolution.W(tf.truncated_normal_initializer(mean=0.0, stddev=1.0))
-  
-  will do the task
-  
