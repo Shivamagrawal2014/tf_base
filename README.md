@@ -10,7 +10,7 @@ Tensorflow coding, simplified.
 Library under development. Contains rough edges/unfinished functonality. API subject to changes.
 
 ### Dictionary to Featues 
->>This library has support for making features from a single call. 
+  >This library has support for making features from a single call. 
 ```python 
   from tf_base.file.record.protofy import protofy
   
