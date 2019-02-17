@@ -105,10 +105,10 @@ Library under development. Contains rough edges/unfinished functonality. API sub
     
     # is same as 
     with.variabl_scope('Convolution'+'/'+'W')
-    one = tf.Variable(initial_value=
-                      tf.truncated_normal_initializer(mean=0.0, stddev=1.0), 
-                      name='weight'))
-            
+      one = tf.Variable(initial_value=
+                        tf.truncated_normal_initializer(mean=0.0, stddev=1.0), 
+                        name='weight'))
+
 ```
 Now all classes and functions act as variable_scope to the graph.
 
