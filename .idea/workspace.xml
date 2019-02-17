@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4dc2e976-380e-488e-98c6-a4b50a26cff3" name="Default" comment="changed image record reader">
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+    <list default="true" id="4dc2e976-380e-488e-98c6-a4b50a26cff3" name="Default" comment="edited travis.yml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="tf_base.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -441,20 +441,6 @@
       <option name="presentableId" value="Default" />
       <updated>1543727097394</updated>
     </task>
-    <task id="LOCAL-00042" summary="Changes made to record">
-      <created>1549954595438</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1549954595438</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Changes made to record">
-      <created>1549954667415</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1549954667415</updated>
-    </task>
     <task id="LOCAL-00044" summary="Changes made to record">
       <created>1549955317314</created>
       <option name="number" value="00044" />
@@ -784,7 +770,21 @@
       <option name="project" value="LOCAL" />
       <updated>1550412361189</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="edited travis.yml">
+      <created>1550414872343</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1550414872343</updated>
+    </task>
+    <task id="LOCAL-00092" summary="edited travis.yml">
+      <created>1550414882264</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1550414882264</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TodoView">
@@ -857,7 +857,8 @@
     <MESSAGE value="added travis yml" />
     <MESSAGE value="edited travis yml" />
     <MESSAGE value="edited requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="edited requirements.txt" />
+    <MESSAGE value="edited travis.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="edited travis.yml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
