@@ -54,25 +54,27 @@ Also Graph functionality acts as base graph
         def session(self):
             return super(Api, self).session
 
-    class Meta(Api):
+    class Convolution(Api):
 
-        def meta_method1(self, value, name='Test'):
+        def W(self, value, name='weight'):
             return tf.Variable(initial_value=value, name=name)
 
-        def meta_method2(self, value, name='Test'):
-            return tf.Variable(initial_value=value, name=name)
-
-    class Reader(Api):
-
-        def trial(self, value, name='Test'):
+        def B(self, value, name='bias'):
             return tf.Variable(initial_value=value, name=name)
             
             
 ```
-Now all classes and functions act as variable_scope to the graph and there is no explicit need to call
+Now all classes and functions act as variable_scope to the graph.
+So there is no explicit need to call
 ```python 
 
-with.variabl_scope('Meta'+'method')
-    one = tf.Variable(initial_value=1, name='one'))
+with.variabl_scope('Concolution'+'/'+'W')
+    one = tf.Variable(initial_value=tf.truncated_normal_initializer(mean=0.0, stddev=1.0), name='weight'))
 ```
-to name the variable as **Meta/meta_method_1/one:0**
+to name the variable as **Convolution/W/weight:0**
+
+just 
+```python 
+  convolution = Convolution()
+  weight = convolution.W(tf.truncated_normal_initializer(mean=0.0, stddev=1.0))
+  
