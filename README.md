@@ -1,7 +1,6 @@
 # tf_base
 [![Build Status](https://travis-ci.com/Shivamagrawal2014/tf_base.svg?branch=master)](https://travis-ci.com/Shivamagrawal2014/tf_base)
-[![Coverage Status](https://coveralls.io/repos/github/Shivamagrawal2014/tf_base.svg?branch=master)]
-(https://coveralls.io/repos/github/Shivamagrawal2014/tf_base)
+[![Coverage Status](https://coveralls.io/repos/github/Shivamagrawal2014/tf_base/badge.svg?branch=master)](https://coveralls.io/github/Shivamagrawal2014/tf_base?branch=master)
 
 High level API to make task of Tensorflow Coding Easy   
 
