@@ -22,7 +22,7 @@ bleach==2.1.4
 bokeh==0.13.0
 boto==2.49.0
 Bottleneck==1.2.1
-certifi==2018.8.24
+certifi==2019.3.9
 cffi==1.11.5
 chardet==3.0.4
 chest==0.2.3
