@@ -161,7 +161,7 @@ Pygments==2.2.0
 pylint==2.1.1
 pyOpenSSL==18.0.0
 pyparsing==2.2.1
-PySocks==1.6.8
+PySocks==1.7.0
 pytest==3.8.1
 pytest-arraydiff==0.2
 pytest-astropy==0.4.0
