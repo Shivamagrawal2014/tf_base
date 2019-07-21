@@ -160,7 +160,7 @@ Pygments==2.2.0
 #pygpu==0.7.6
 pylint==2.1.1
 pyOpenSSL==18.0.0
-pyparsing==2.2.1
+pyparsing==2.4.1
 PySocks==1.6.8
 pytest==3.8.1
 pytest-arraydiff==0.2
