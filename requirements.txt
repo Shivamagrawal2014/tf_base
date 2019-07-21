@@ -49,7 +49,7 @@ dis==1.0.1
 distributed==1.23.2
 #Django==2.1.1
 #django-extensions==1.7.6
-docutils==0.14
+docutils==0.15
 docx2txt==0.6
 #dynd==0.7.3.dev1
 EbookLib==0.16
