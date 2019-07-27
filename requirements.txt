@@ -93,7 +93,7 @@ kiwisolver==1.0.1
 lazy-object-proxy==1.3.1
 #llvmlite==0.24.0+1.gee50a0f
 locket==0.2.0
-lxml==4.2.5
+lxml==4.4.0
 Mako==1.0.7
 Markdown==2.6.11
 MarkupSafe==1.0
