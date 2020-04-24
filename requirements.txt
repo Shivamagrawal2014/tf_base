@@ -195,7 +195,7 @@ simplegeneric==0.8.1
 singledispatch==3.4.0.3
 six==1.10.0
 snowballstemmer==1.2.1
-sockjs-tornado==1.0.5
+sockjs-tornado==1.0.7
 sortedcontainers==2.0.5
 SpeechRecognition==3.7.1
 #Sphinx==1.7.9
