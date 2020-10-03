@@ -15,7 +15,7 @@ Automat==0.7.0
 Babel==2.6.0
 backcall==0.1.0
 backports.shutil-get-terminal-size==1.0.0
-beautifulsoup4==4.6.0
+beautifulsoup4==4.9.3
 bitarray==0.8.3
 blaze==0.10.1
 bleach==2.1.4
