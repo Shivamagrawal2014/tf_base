@@ -16,7 +16,7 @@ Babel==2.6.0
 backcall==0.1.0
 backports.shutil-get-terminal-size==1.0.0
 beautifulsoup4==4.6.0
-bitarray==0.8.3
+bitarray==1.6.0
 blaze==0.10.1
 bleach==2.1.4
 bokeh==0.13.0
