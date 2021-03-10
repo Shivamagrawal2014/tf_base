@@ -154,7 +154,7 @@ pycparser==2.19
 #pycrypto==2.6.1
 #pycryptodome==3.7.3
 pycurl==7.43.0.2
-pydub==0.23.1
+pydub==0.25.1
 pyflakes==2.0.0
 Pygments==2.2.0
 #pygpu==0.7.6
