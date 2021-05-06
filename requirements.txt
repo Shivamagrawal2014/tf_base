@@ -54,7 +54,7 @@ docx2txt==0.6
 #dynd==0.7.3.dev1
 EbookLib==0.16
 entrypoints==0.2.3
-et-xmlfile==1.0.1
+et-xmlfile==1.1.0
 fastcache==1.0.2
 #Flask==1.0.2
 #Flask-Cors==3.0.6
