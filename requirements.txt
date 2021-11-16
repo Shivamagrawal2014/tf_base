@@ -194,7 +194,7 @@ service-identity==17.0.0
 simplegeneric==0.8.1
 singledispatch==3.4.0.3
 six==1.10.0
-snowballstemmer==1.2.1
+snowballstemmer==2.2.0
 sockjs-tornado==1.0.5
 sortedcontainers==2.0.5
 SpeechRecognition==3.7.1
