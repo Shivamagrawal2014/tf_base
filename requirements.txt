@@ -181,7 +181,7 @@ QtPy==1.5.0
 #redis==2.10.6
 #requests==2.19.1
 rflearn==0.0.1
-rope==0.11.0
+rope==1.1.0
 ruamel-yaml==0.15.46
 setuptools==39.1.0
 scikit-image==0.14.0
