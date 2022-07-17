@@ -158,7 +158,7 @@ pydub==0.23.1
 pyflakes==2.0.0
 Pygments==2.2.0
 #pygpu==0.7.6
-pylint==2.1.1
+pylint==2.14.5
 pyOpenSSL==18.0.0
 pyparsing==2.2.1
 PySocks==1.6.8
