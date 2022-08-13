@@ -187,7 +187,7 @@ setuptools==39.1.0
 scikit-image==0.14.0
 scikit-learn==0.20.0
 scipy==1.1.0
-SecretStorage==3.1.0
+SecretStorage==3.3.3
 #selenium==3.8.0
 Send2Trash==1.5.0
 service-identity==17.0.0
