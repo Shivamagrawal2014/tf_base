@@ -177,7 +177,7 @@ PyWavelets==1.0.0
 pyzmq==17.1.2
 QtAwesome==0.4.4
 qtconsole==4.4.1
-QtPy==1.5.0
+QtPy==2.2.1
 #redis==2.10.6
 #requests==2.19.1
 rflearn==0.0.1
