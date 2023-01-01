@@ -156,7 +156,7 @@ pycparser==2.19
 pycurl==7.43.0.2
 pydub==0.23.1
 pyflakes==2.0.0
-Pygments==2.2.0
+Pygments==2.14.0
 #pygpu==0.7.6
 pylint==2.1.1
 pyOpenSSL==18.0.0
