@@ -192,7 +192,7 @@ SecretStorage==3.1.0
 Send2Trash==1.5.0
 service-identity==17.0.0
 simplegeneric==0.8.1
-singledispatch==3.4.0.3
+singledispatch==4.0.0
 six==1.10.0
 snowballstemmer==1.2.1
 sockjs-tornado==1.0.5
