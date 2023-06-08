@@ -165,7 +165,7 @@ PySocks==1.6.8
 pytest==3.8.1
 pytest-arraydiff==0.2
 pytest-astropy==0.4.0
-pytest-doctestplus==0.1.3
+pytest-doctestplus==0.13.0
 pytest-openfiles==0.3.0
 pytest-remotedata==0.3.0
 python-dateutil==2.7.3
