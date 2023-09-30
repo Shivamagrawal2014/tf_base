@@ -225,7 +225,7 @@ urllib3==1.23
 virtualenv==16.0.0
 wcwidth==0.1.7
 webencodings==0.5.1
-Werkzeug==0.14.1
+Werkzeug==3.0.0
 widgetsnbextension==3.4.1
 wrapt==1.10.11
 xlrd==1.0.0
