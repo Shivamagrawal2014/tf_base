@@ -33,7 +33,7 @@ colorama==0.3.9
 #conda==4.5.11
 #conda-build==1.21.3
 configobj==5.0.6
-constantly==15.1.0
+constantly==23.10.4
 contextlib2==0.5.5
 #coursera-dl==0.8.0
 cryptography==2.3.1
