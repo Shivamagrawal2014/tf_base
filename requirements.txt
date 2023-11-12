@@ -3,7 +3,7 @@ alabaster==0.7.11
 #anaconda-client==1.7.2
 #anaconda-navigator==1.9.2
 appdirs==1.4.3
-argcomplete==1.8.2
+argcomplete==3.1.6
 asn1crypto==0.24.0
 astor==0.6.2
 astroid==2.0.4
