@@ -163,7 +163,7 @@ pyOpenSSL==18.0.0
 pyparsing==2.2.1
 PySocks==1.6.8
 pytest==3.8.1
-pytest-arraydiff==0.2
+pytest-arraydiff==0.6.1
 pytest-astropy==0.4.0
 pytest-doctestplus==0.1.3
 pytest-openfiles==0.3.0
