@@ -162,7 +162,7 @@ pylint==2.1.1
 pyOpenSSL==18.0.0
 pyparsing==2.2.1
 PySocks==1.6.8
-pytest==3.8.1
+pytest==8.0.0
 pytest-arraydiff==0.2
 pytest-astropy==0.4.0
 pytest-doctestplus==0.1.3
