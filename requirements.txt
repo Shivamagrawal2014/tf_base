@@ -132,7 +132,7 @@ partd==0.3.8
 path.py==11.1.0
 pathlib2==2.3.2
 patsy==0.5.0
-pdfminer.six==20181108
+pdfminer.six==20240706
 pep8==1.7.1
 pexpect==4.6.0
 pickleshare==0.7.4
