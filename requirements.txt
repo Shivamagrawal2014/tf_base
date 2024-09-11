@@ -171,7 +171,7 @@ pytest-remotedata==0.3.0
 python-dateutil==2.7.3
 python-pptx==0.6.6
 python-speech-features==0.6
-pytz==2018.5
+pytz==2024.2
 PyWavelets==1.0.0
 #PyYAML==3.13
 pyzmq==17.1.2
